@@ -8,16 +8,35 @@ require "tty-prompt"
 require_relative "../classes/Users.rb"
 require_relative "../classes/ChordProgression.rb"
 
-#Initialize TTY prompt
-prompt = TTY::Prompt.new
 
-#Clear terminal to ready app
-system('clear')
 
-# Get the users name
+def welcome
+    prompt.select("Welcome to BeatTheBlues, please create your username") do |menu|
+        menu.choice "User", -> {puts "You chose 12 Bar Blues"}
+        menu.choice "Logged Practice", -> {puts "You chose Logged Practice"}
+      end
+end
 
-    prompt.ask("What is your name?", default: ["Musician"])
-    name = gets.chomp
-    
-puts name
+puts user
+
+
+
+
+
+
+
+
+# #Initialize TTY prompt
+# prompt = TTY::Prompt.new
+
+ 
+
+
+
+  
+# #ENTER USERNAME
+# def collect_username
+#     puts "Welcome user please enter your name"
+#     return gets.chomp
+# end
 
