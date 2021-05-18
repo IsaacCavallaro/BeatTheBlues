@@ -110,7 +110,6 @@ levels_array = [level_one, level_two, level_three]
 
 
 ########  MAIN MENU #######
-
 require 'tty-prompt'
 
 def username_prompt
@@ -122,15 +121,7 @@ def username_prompt
     
     puts "Welcome #{username} to BeatTheBlues"
 
-    sleep(3)
-    puts username_checker
-
-end
-
-def username_checker
-
-    prompt = TTY::Prompt.new
-
+    # Check if user wants to change username
     choices = [
         {name: 'Yes', value: 1},
         {name: 'No', value: 2},
@@ -142,25 +133,24 @@ def username_checker
     case username_check
     when 1
         system("clear")    
-        puts "Ok great!"
+        puts "Sounds good #{username}!"
+        sleep (2)
+        prompt_one
 
     when 2
         # Functionality for Choice 2 goes here
         puts "Ok lets re do your username"
+        sleep (2)
+        username_prompt
     when 3
         # Functionality for Choice 3 goes here
         puts "Exiting application..."
     end
-    
+
 end
-   
-
-
 
 
 ########  Prompt One #######
-
-
 def prompt_one
 
     system("clear") 
@@ -178,8 +168,11 @@ def prompt_one
 
     case user_input
         when 1
-            system("clear")    
-            puts challenge_selection
+            system("clear")
+            puts "Cool! You selected 12 bar blues"
+            puts "Lets get you to select your level of difficulty"   
+            sleep (2) 
+            challenge_selection
   
         when 2
             # Functionality for Choice 2 goes here
@@ -194,6 +187,8 @@ end
 ########  Challenge Section #######
 
 def challenge_selection
+
+    level_one = [['I','I','I','I'],['IV','IV','I','I'],['V','V','I','V']]
 
     prompt = TTY::Prompt.new
 
@@ -210,24 +205,50 @@ def challenge_selection
 
 
     case user_input
-    when 1
-    # Functionality for Choice 1 goes here
-    puts "Alight lets do level 1..."
-    when 2
-    # Functionality for Choice 2 goes here
-    puts "Alights lets do level 2..."
-    when 3
-    # Functionality for Choice 2 goes here
-    puts "Alights lets do level 3..." 
-    when 4
-    # Functionality for Choice 2 goes here
-    puts "Alights lets do level 4..." 
-    when 5
-    # Functionality for Choice 3 goes here
-    puts "Exiting application..."
+
+        when 1
+ 
+            puts "Great! Lets do a level 1 chord progression today" 
+            puts "This is the chord progression we will work on in Roman Numerals"
+            puts level_one
+            sleep (2)
+            key_signature_selection
+
+        when 2
+    
+            puts "Great! Lets do a level 2 chord progression today" 
+            puts "This is the chord progression we will work on in Roman Numerals"
+            puts level_two
+            sleep (2)
+            key_signature_selection    
+
+        when 3
+    
+            puts "Great! Lets do a level 3 chord progression today" 
+            puts "This is the chord progression we will work on in Roman Numerals"
+            puts level_two
+            sleep (2)
+            key_signature_selection  
+    
+        when 4
+    
+            puts "Hip! Lucky dip time" 
+            puts "Let BeatTheBlues shoot you a 12 bar progression!" 
+    
+        when 5
+    
+            puts "Exiting application..."
     end
 
 end
+
+def key_signature_selection
+
+    puts "Lets select a key signature"
+
+end
+
+
 
 puts username_prompt
 
