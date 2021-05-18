@@ -20,3 +20,4 @@ system('clear')
     name = gets.chomp
     
 puts name
+
