@@ -113,7 +113,57 @@ levels_array = [level_one, level_two, level_three]
 
 require 'tty-prompt'
 
+def username_prompt
+
+    prompt = TTY::Prompt.new
+
+    username = prompt.ask("Enter a username?", default: ["Musician"])
+    system("clear") 
+    
+    puts "Welcome #{username} to BeatTheBlues"
+
+    sleep(3)
+    puts username_checker
+
+end
+
+def username_checker
+
+    prompt = TTY::Prompt.new
+
+    choices = [
+        {name: 'Yes', value: 1},
+        {name: 'No', value: 2},
+        {name: 'Exit', value: 3}
+    ]
+
+    username_check = prompt.select("Are you happy with your username?", choices)
+
+    case username_check
+    when 1
+        system("clear")    
+        puts "Ok great!"
+
+    when 2
+        # Functionality for Choice 2 goes here
+        puts "Ok lets re do your username"
+    when 3
+        # Functionality for Choice 3 goes here
+        puts "Exiting application..."
+    end
+    
+end
+   
+
+
+
+
+########  Prompt One #######
+
+
 def prompt_one
+
+    system("clear") 
 
     prompt = TTY::Prompt.new
 
@@ -129,20 +179,21 @@ def prompt_one
     case user_input
         when 1
             system("clear")    
-            puts prompt_two
+            puts challenge_selection
   
         when 2
             # Functionality for Choice 2 goes here
             puts "Lets check your logged practice..."
-    when 3
-    # Functionality for Choice 3 goes here
-    puts "Exiting application..."
-    end
+        when 3
+            # Functionality for Choice 3 goes here
+            puts "Exiting application..."
+        end
 
 end
 
+########  Challenge Section #######
 
-def prompt_two
+def challenge_selection
 
     prompt = TTY::Prompt.new
 
@@ -178,7 +229,7 @@ def prompt_two
 
 end
 
-puts prompt_one
+puts username_prompt
 
 
 
