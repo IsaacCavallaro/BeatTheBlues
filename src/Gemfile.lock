@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    artii (2.1.2)
+    colorize (0.8.1)
     diff-lcs (1.4.4)
     pastel (0.8.0)
       tty-color (~> 0.5)
@@ -33,6 +35,8 @@ PLATFORMS
   x86_64-darwin-18
 
 DEPENDENCIES
+  artii (~> 2.1)
+  colorize (~> 0.8.1)
   rspec (~> 3.10)
   tty-prompt (~> 0.23.1)
 
