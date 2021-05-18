@@ -41,3 +41,5 @@
 # Implentation Plan
 
 # Help Files
+
+Help documentation can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
