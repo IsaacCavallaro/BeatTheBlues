@@ -1,8 +1,22 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    diff-lcs (1.4.4)
     pastel (0.8.0)
       tty-color (~> 0.5)
+    rspec (3.10.0)
+      rspec-core (~> 3.10.0)
+      rspec-expectations (~> 3.10.0)
+      rspec-mocks (~> 3.10.0)
+    rspec-core (3.10.1)
+      rspec-support (~> 3.10.0)
+    rspec-expectations (3.10.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-mocks (3.10.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-support (3.10.2)
     tty-color (0.6.0)
     tty-cursor (0.7.1)
     tty-prompt (0.23.1)
@@ -19,6 +33,7 @@ PLATFORMS
   x86_64-darwin-18
 
 DEPENDENCIES
+  rspec (~> 3.10)
   tty-prompt (~> 0.23.1)
 
 BUNDLED WITH
