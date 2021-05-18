@@ -40,6 +40,8 @@
 
 Flowcharts can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/tree/master/docs/flowcharts)
 
+![Alt](docs/flowcharts/beat_the_blues_flowchart.png)
+
 # Implentation Plan
 
 # Help Files
