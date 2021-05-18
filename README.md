@@ -8,7 +8,7 @@
 
 ## Purpose & Scope
 
-- Beat the blues is a terminal app which generates a 12 bar blues chord progression for beginner musicians. 
+- BeatTheBlues is a terminal app which generates a 12 bar blues chord progression for beginner musicians. 
 
 - Practicing music, like playing an instrument is a skill. The skills of practicing an instrument effectively can be a particularly challenging skill to learn for the beginner musician in addition to learning various techniques to play an instrument. 
 
@@ -16,11 +16,11 @@
 
 ## What problem does BeatTheBlues solve?
 
-- The first aim of Beat the blues is to help beginning musicians learn 12 bar blues variations in all twelve keys. 
+- The first aim of BeatTheBlues is to help beginning musicians learn 12 bar blues variations in all twelve keys. 
 
 - The second aim of the app is to help beginning musicians decide what to practice in a given session. In short, alleviate decision fatigue. 
 
-- Finally, the app can track/save and load the progress of the users. 
+- Finally, the app can track/save and load the progress of the users.
 
 ## Target Audience
 
