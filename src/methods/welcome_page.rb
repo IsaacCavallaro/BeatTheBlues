@@ -3,13 +3,26 @@ require 'colorize'
 
 #Home page logo#
 def welcome_page
-    a = Artii::Base.new
-    a.asciify('BeatTheBlues')
+    
 
+    logo = Artii::Base.new
+    logo.asciify('BeatTheBlues')
 
-    puts a.asciify('BeatTheBlues').colorize(:blue)
+    puts logo.asciify('BeatTheBlues').colorize(:blue)
+    
 
-    puts "This is blue".colorize(:blue)
+    puts "A place to practice and store your twelve bar blues!".colorize(:blue)
+
+    puts " _______________________________________".colorize(:cyan)
+    puts "|  | | | |  |  | | | | | |  |  | | | |  |".colorize(:cyan)
+    puts "|  | | | |  |  | | | | | |  |  | | | |  |".colorize(:cyan)
+    puts "|  | | | |  |  | | | | | |  |  | | | |  |".colorize(:cyan)
+    puts "|  |_| |_|  |  |_| |_| |_|  |  |_| |_|  |".colorize(:cyan)
+    puts "|   |   |   |   |   |   |   |   |   |   |".colorize(:cyan)
+    puts "|   |   |   |   |   |   |   |   |   |   |".colorize(:cyan)
+    puts "|___|___|___|___|___|___|___|___|___|___|".colorize(:cyan)
+
+    puts " "
 
 end
 
