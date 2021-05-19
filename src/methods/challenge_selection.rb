@@ -3,6 +3,8 @@ require 'tty-prompt'
 def challenge_selection(username)
 
     system("clear") 
+    
+    welcome_page
 
     level_one = [['I','I','I','I'],['IV','IV','I','I'],['V','V','I','V']]
     level_two = [['I','IV','I','I'],['IV','IV','I','I'],['V','V','I','V']]
@@ -19,22 +21,22 @@ def challenge_selection(username)
 
     ]
     
-    user_input = prompt.select("Alright #{username}! Lets select your level of difficulty", choices)
+    selected_level = prompt.select("Alright #{username}! Lets select the level of difficulty you want for your blues progression", choices)
 
 
-    case user_input
+    case selected_level
 
         when 1
 
-            selected_level = user_input
-
             system("clear") 
 
-            prompt = TTY::Prompt.new
+            welcome_page
+
+            prompt = TTY::Prompt.new(active_color: :blue)
  
-            puts "Great choice #{username}! Lets do a level #{selected_level} chord progression in todays BeatTheBlues session" 
+            puts "Great choice #{username}! Lets do a level #{selected_level} chord progression in todays BeatTheBlues session.".colorize(:blue) 
             puts "-------------------------------------------------------------"
-            puts "Below is the chord progression for todays BeatTheBlues session in Roman Numerals:"
+            puts "Below is the chord progression for todays BeatTheBlues session in Roman Numerals:".colorize(:cyan)
             puts level_one
 
 
@@ -46,6 +48,7 @@ def challenge_selection(username)
    
             ]
 
+            puts "-------------------------------------------------------------"
             user_progression_check = prompt.select("Are you happy with this selection?", choices)
 
             case
@@ -58,24 +61,28 @@ def challenge_selection(username)
                     puts "You said no"
 
                 when 3
+
                     puts "Exiting application..."
+                    sleep(1)
+                    welcome_page
             
             end
 
 
         when 2
 
-            selected_level = user_input
+
 
             system("clear") 
     
-            puts "Great choice #{username}! Lets do a level #{selected_level} chord progression in todays BeatTheBlues session"  
+            puts "Great choice #{username}! Lets do a level #{selected_level} chord progression in todays BeatTheBlues session".colorize(:blue)  
             puts "-------------------------------------------------------------"
             puts "Below is the chord progression for todays BeatTheBlues session in Roman Numerals:"
             puts level_two
 
             # Check if user wants to change level
             choices = [
+
                 {name: 'Yes', value: 1},
                 {name: 'No', value: 2},
                 {name: 'Exit', value: 3}
@@ -94,6 +101,7 @@ def challenge_selection(username)
                     puts "You said no"
 
                 when 3
+
                     puts "Exiting application..."
             
             end
@@ -101,7 +109,6 @@ def challenge_selection(username)
 
         when 3
 
-            selected_level = user_input
 
             system("clear") 
     
@@ -112,6 +119,7 @@ def challenge_selection(username)
             
             # Check if user wants to change level
             choices = [
+
                 {name: 'Yes', value: 1},
                 {name: 'No', value: 2},
                 {name: 'Exit', value: 3}

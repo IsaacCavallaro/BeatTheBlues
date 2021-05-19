@@ -1,4 +1,4 @@
-require_relative 'chord_progression'
+
 
 ############################################  LEVEL ONE PROGRESSIONS  #################################################
 

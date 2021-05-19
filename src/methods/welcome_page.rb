@@ -11,7 +11,7 @@ def welcome_page
     puts logo.asciify('BeatTheBlues').colorize(:blue)
     
 
-    puts "A place to practice and store your twelve bar blues!".colorize(:blue)
+    puts "A place to study the twelve bar blues!".colorize(:blue)
 
     puts " _______________________________________".colorize(:cyan)
     puts "|  | | | |  |  | | | | | |  |  | | | |  |".colorize(:cyan)

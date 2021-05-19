@@ -3,32 +3,36 @@ require 'tty-prompt'
 def prompt_one(username)
 
     system("clear") 
+    
+    welcome_page
 
     prompt = TTY::Prompt.new(active_color: :blue)
 
     choices = [
-        {name: 'Generate a 12 bar blues', value: 1},
+
+        {name: 'Generate a 12 bar blues progression', value: 1},
         {name: 'Check your logged practice', value: 2},
         {name: 'Exit', value: 3}
     ]
     
-    user_input = prompt.select("What would you like to do #{username} ?", choices)
+    user_input = prompt.select("What would you like to do today #{username}?", choices)
 
 
     case user_input
         when 1
 
-            system("clear")
             challenge_selection(username)
-  
+
         when 2
             
             puts "Lets check your logged practice..."
 
-        when 3
-            
-            
-            puts "Exiting application..."
+        when 3    
+
+        system("clear")    
+        welcome_page
+        puts "Exit application"
+        sleep (1)
     end
 
 end
