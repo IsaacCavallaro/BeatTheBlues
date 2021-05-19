@@ -114,6 +114,8 @@ levels_array = [level_one, level_two, level_three]
 
 ########  MAIN MENU #######
 require 'tty-prompt'
+require 'json'
+
 
 def username_prompt
 
@@ -382,11 +384,28 @@ def calculator
 
     puts "lets create your blues progression"
     #Add selected level and selected key signature
+    #store in user_hash
 
 end
 
+# def user_hash_to_json
 
-puts username_prompt
+#     user_hash = { 'a' => 1, 'b' => 2 }
+#     json = user_hash.to_json
+#     puts json
+
+# end
+
+
+
+
+
+
+#RUN PROGRAM
+
+# # puts calculator
+
+# puts username_prompt
 
 
 
