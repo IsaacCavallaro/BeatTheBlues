@@ -108,6 +108,9 @@ levels_array = [level_one, level_two, level_three]
 # ########  User difficulty selection array #######
 # difficulty_selection = [level_one, level_two, level_three, luck_dip]
 
+################################################################ ################################################################   ################################################################   ################################################################              
+
+
 
 ########  MAIN MENU #######
 require 'tty-prompt'
@@ -119,6 +122,7 @@ def username_prompt
     username = prompt.ask("Enter a username?", default: ["Musician"])
     system("clear") 
     
+    puts "-----------------------------------"
     puts "Welcome #{username} to BeatTheBlues"
 
     # Check if user wants to change username
@@ -133,18 +137,22 @@ def username_prompt
     case username_check
     when 1
         system("clear")    
-        puts "Sounds good #{username}!"
+        confirmed_username = username
+        puts "Sounds good #{confirmed_username}!"
+        puts "Loading page..."
         sleep (2)
         prompt_one
 
     when 2
-        # Functionality for Choice 2 goes here
+
         puts "Ok lets re do your username"
-        sleep (2)
+        sleep (1)
         username_prompt
+
     when 3
-        # Functionality for Choice 3 goes here
+       
         puts "Exiting application..."
+
     end
 
 end
@@ -168,19 +176,19 @@ def prompt_one
 
     case user_input
         when 1
+
             system("clear")
-            puts "Cool! You selected 12 bar blues"
-            puts "Lets get you to select your level of difficulty"   
-            sleep (2) 
             challenge_selection
   
         when 2
-            # Functionality for Choice 2 goes here
+            
             puts "Lets check your logged practice..."
+
         when 3
-            # Functionality for Choice 3 goes here
+            
+            
             puts "Exiting application..."
-        end
+    end
 
 end
 
@@ -201,18 +209,45 @@ def challenge_selection
 
     ]
     
-    user_input = prompt.select("Select an action?", choices)
+    user_input = prompt.select("Cool! Lets select your level of difficulty", choices)
 
 
     case user_input
 
         when 1
+
+            prompt = TTY::Prompt.new
  
-            puts "Great! Lets do a level 1 chord progression today" 
+            puts "Great! Lets do a level 1 chord progression in todays session" 
+            puts "-------------------------------------------------------------"
             puts "This is the chord progression we will work on in Roman Numerals"
             puts level_one
-            sleep (2)
-            key_signature_selection
+
+
+            # Check if user wants to change level
+            choices = [
+                {name: 'Yes', value: 1},
+                {name: 'No', value: 2},
+                {name: 'Exit', value: 3}
+   
+            ]
+
+            user_progression_check = prompt.select("Are you happy with this selection?", choices)
+
+            case
+
+                when 1
+                
+                    key_signature_selection  
+                
+                when 2
+                    puts "You said no"
+
+                when 3
+                    puts "Exiting application..."
+            
+            end
+
 
         when 2
     
@@ -244,13 +279,68 @@ end
 
 def key_signature_selection
 
-    puts "Lets select a key signature"
+    prompt = TTY::Prompt.new
+
+    system("clear")
+
+    choices = [
+        {name: 'flats', value: 1},
+        {name: 'sharps', value: 2},
+        {name: 'natural', value: 3},
+        {name: 'Exit', value: 4},
+    ]
+    
+    user_input = prompt.select("Great! Lets now select a key signature?", choices)
+
+    case
+        when 1
+            system("clear")
+            puts "Cool! you selected a key signature with flats"
+            puts "----------------------------------------------"
+             # Check if user wants to change key signature
+             choices = [
+                {name: 'Yes', value: 1},
+                {name: 'No', value: 2},
+                {name: 'Exit', value: 3}
+   
+            ]
+
+            user_progression_check = prompt.select("Are you happy with this key signature selection?", choices)
+
+            case
+                when 1
+                    puts "Cool!"
+                    calculator
+                when 2
+                    puts "Oh no!"
+                when 3
+                    puts "Exiting application"
+            end
+
+        when 2
+            puts "Cool! you selected a key signature with sharps"
+
+        when 3
+            puts "Cool! you selected natural key signature"
+        
+        when 4 
+            puts "Exiting application"
+    end
+
+        
+end
+
+
+def calculator
+
+    puts "lets create your blues progression"
+    #Add selected level and selected key signature
 
 end
 
 
-
 puts username_prompt
+
 
 
 
