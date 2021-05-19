@@ -22,11 +22,10 @@ def username_prompt
     case username_check
     when 1
         system("clear")    
-        confirmed_username = username
-        puts "Sounds good #{confirmed_username}!"
+        puts "Sounds good #{username}!"
         puts "Loading page..."
         sleep (2)
-        prompt_one(confirmed_username)
+        prompt_one(username)
 
     when 2
 

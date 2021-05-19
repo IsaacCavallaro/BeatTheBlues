@@ -7,19 +7,19 @@ def prompt_one(username)
     prompt = TTY::Prompt.new
 
     choices = [
-        {name: '12 bar blues', value: 1},
-        {name: 'Logged practice', value: 2},
+        {name: 'Generate a 12 bar blues', value: 1},
+        {name: 'Check your logged practice', value: 2},
         {name: 'Exit', value: 3}
     ]
     
-    user_input = prompt.select("Select an #{username} action?", choices)
+    user_input = prompt.select("What would you like to do #{username} ?", choices)
 
 
     case user_input
         when 1
 
             system("clear")
-            challenge_selection
+            challenge_selection(username)
   
         when 2
             

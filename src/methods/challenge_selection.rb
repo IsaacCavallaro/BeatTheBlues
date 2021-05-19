@@ -1,6 +1,8 @@
 require 'tty-prompt'
 
-def challenge_selection
+def challenge_selection(username)
+
+    system("clear") 
 
     level_one = [['I','I','I','I'],['IV','IV','I','I'],['V','V','I','V']]
     level_two = [['I','IV','I','I'],['IV','IV','I','I'],['V','V','I','V']]
@@ -17,18 +19,22 @@ def challenge_selection
 
     ]
     
-    user_input = prompt.select("Cool! Lets select your level of difficulty", choices)
+    user_input = prompt.select("Alright #{username}! Lets select your level of difficulty", choices)
 
 
     case user_input
 
         when 1
 
+            selected_level = user_input
+
+            system("clear") 
+
             prompt = TTY::Prompt.new
  
-            puts "Great! Lets do a level 1 chord progression in todays session" 
+            puts "Great choice #{username}! Lets do a level #{selected_level} chord progression in todays BeatTheBlues session" 
             puts "-------------------------------------------------------------"
-            puts "This is the chord progression we will work on in Roman Numerals"
+            puts "Below is the chord progression for todays BeatTheBlues session in Roman Numerals:"
             puts level_one
 
 
@@ -46,7 +52,7 @@ def challenge_selection
 
                 when 1
                 
-                    key_signature_selection  
+                    key_signature_selection(username,selected_level)  
                 
                 when 2
                     puts "You said no"
@@ -59,8 +65,9 @@ def challenge_selection
 
         when 2
     
-            puts "Great! Lets do a level 2 chord progression today" 
-            puts "This is the chord progression we will work on in Roman Numerals"
+            puts "Great choice #{username}! Lets do a level #{selected_level} chord progression in todays BeatTheBlues session"  
+            puts "-------------------------------------------------------------"
+            puts "Below is the chord progression for todays BeatTheBlues session in Roman Numerals:"
             puts level_two
 
             # Check if user wants to change level
@@ -90,8 +97,9 @@ def challenge_selection
 
         when 3
     
-            puts "Great! Lets do a level 3 chord progression today" 
-            puts "This is the chord progression we will work on in Roman Numerals"
+            puts "Great choice #{username}! Lets do a level #{selected_level} chord progression in todays BeatTheBlues session" 
+            puts "-------------------------------------------------------------"
+            puts "Below is the chord progression for todays BeatTheBlues session in Roman Numerals:"
             puts level_three
             
             # Check if user wants to change level
@@ -102,16 +110,16 @@ def challenge_selection
    
             ]
 
-            user_progression_check = prompt.select("Are you happy with this selection?", choices)
+            user_progression_check = prompt.select("Are you happy with this selection #{username}?", choices)
 
             case
 
                 when 1
                 
-                    key_signature_selection  
+                    key_signature_selection(username)  
                 
                 when 2
-                    puts "You said no"
+                    puts "That's ok #{username}"
 
                 when 3
                     puts "Exiting application..."
@@ -120,8 +128,8 @@ def challenge_selection
     
         when 4
     
-            puts "Hip! Lucky dip time" 
-            puts "Let BeatTheBlues shoot you a 12 bar progression!" 
+            puts "Hip choice #{username}!" 
+            puts "Please wait while BeatTheBlues generates a random 12 bar progression from any key and any level!" 
     
         when 5
     

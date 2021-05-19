@@ -95,9 +95,9 @@ levels_array = [level_one, level_two, level_three]
 
 
 
-########  MAIN MENU #######
-require 'tty-prompt'
-require 'json'
+# ########  MAIN MENU #######
+# require 'tty-prompt'
+# require 'json'
 
 
 

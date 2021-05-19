@@ -1,4 +1,4 @@
-def key_signature_selection
+def key_signature_selection(username, selected_level)
 
     prompt = TTY::Prompt.new
 
@@ -11,12 +11,12 @@ def key_signature_selection
         {name: 'Exit', value: 4},
     ]
     
-    user_input = prompt.select("Great! Lets now select a key signature?", choices)
+    user_input = prompt.select("Great! We're almost there #{username}! Lets now select a key signature:", choices)
 
     case
         when 1
             system("clear")
-            puts "Cool! you selected a key signature with flats"
+            puts "Cool choice #{username}! You selected a key signature with flats"
             puts "----------------------------------------------"
              # Check if user wants to change key signature
              choices = [
@@ -26,23 +26,27 @@ def key_signature_selection
    
             ]
 
-            user_progression_check = prompt.select("Are you happy with this key signature selection?", choices)
+            user_progression_check = prompt.select("Are you happy with this key signature selection #{username}?", choices)
 
             case
                 when 1
-                    puts "Cool!"
-                    calculator
+                    puts "Sounds good #{username}!"
+                    level_plus_key_calculator(username)
                 when 2
-                    puts "Oh no!"
+                    puts "No worries #{username}"
                 when 3
                     puts "Exiting application"
             end
 
         when 2
-            puts "Cool! you selected a key signature with sharps"
+            system("clear")
+            puts "Cool choice #{username}! You selected a key signature with sharps"
+            puts "----------------------------------------------"
 
         when 3
-            puts "Cool! you selected natural key signature"
+            system("clear")
+            puts "Natural choice #{username}! You selected a key signature with no sharps or flats"
+            puts "----------------------------------------------"
         
         when 4 
             puts "Exiting application"
