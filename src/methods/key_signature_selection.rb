@@ -1,6 +1,6 @@
 def key_signature_selection(username, selected_level)
 
-    prompt = TTY::Prompt.new
+    prompt = TTY::Prompt.new(active_color: :blue)
 
     system("clear")
 

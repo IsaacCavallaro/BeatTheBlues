@@ -4,7 +4,7 @@ def prompt_one(username)
 
     system("clear") 
 
-    prompt = TTY::Prompt.new
+    prompt = TTY::Prompt.new(active_color: :blue)
 
     choices = [
         {name: 'Generate a 12 bar blues', value: 1},

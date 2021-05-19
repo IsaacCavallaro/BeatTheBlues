@@ -1,8 +1,9 @@
 require 'tty-prompt'
+require 'colorize'
 
 def username_prompt
 
-    prompt = TTY::Prompt.new
+    prompt = TTY::Prompt.new(active_color: :blue)
 
     username = prompt.ask("Enter a username?", default: ["Musician"])
     system("clear") 
@@ -22,7 +23,7 @@ def username_prompt
     case username_check
     when 1
         system("clear")    
-        puts "Sounds good #{username}!"
+        puts "Sounds good #{username.colorize(:blue)}!"
         puts "Loading page..."
         sleep (2)
         prompt_one(username)

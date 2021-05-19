@@ -8,7 +8,7 @@ def challenge_selection(username)
     level_two = [['I','IV','I','I'],['IV','IV','I','I'],['V','V','I','V']]
     level_three = [['I','IV','I','I'],['IV','IV','I','VI'],['ii','V','I','V']]
 
-    prompt = TTY::Prompt.new
+    prompt = TTY::Prompt.new(active_color: :blue)
 
     choices = [
         {name: 'level 1', value: 1},
