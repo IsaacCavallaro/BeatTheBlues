@@ -64,6 +64,10 @@ def challenge_selection(username)
 
 
         when 2
+
+            selected_level = user_input
+
+            system("clear") 
     
             puts "Great choice #{username}! Lets do a level #{selected_level} chord progression in todays BeatTheBlues session"  
             puts "-------------------------------------------------------------"
@@ -96,6 +100,10 @@ def challenge_selection(username)
             
 
         when 3
+
+            selected_level = user_input
+
+            system("clear") 
     
             puts "Great choice #{username}! Lets do a level #{selected_level} chord progression in todays BeatTheBlues session" 
             puts "-------------------------------------------------------------"

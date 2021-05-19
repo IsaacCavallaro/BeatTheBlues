@@ -15,6 +15,8 @@ def key_signature_selection(username, selected_level)
 
     case
         when 1
+            
+            selected_key = user_input
             system("clear")
             puts "Cool choice #{username}! You selected a key signature with flats"
             puts "----------------------------------------------"
@@ -31,7 +33,7 @@ def key_signature_selection(username, selected_level)
             case
                 when 1
                     puts "Sounds good #{username}!"
-                    level_plus_key_calculator(username)
+                    level_plus_key_calculator(username, selected_level, selected_key)
                 when 2
                     puts "No worries #{username}"
                 when 3

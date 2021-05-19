@@ -28,15 +28,14 @@ def username_prompt
         prompt_one(username)
 
     when 2
-
+        system("clear") 
         puts "Ok lets re do your username"
-        sleep (1)
         username_prompt
 
     when 3
-       
-        puts "Exiting application..."
-
+        system("clear") 
+        puts "Exit application"
+        sleep (1)
     end
 
 end
