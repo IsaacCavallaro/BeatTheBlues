@@ -4,6 +4,7 @@ GEM
     artii (2.1.2)
     colorize (0.8.1)
     diff-lcs (1.4.4)
+    json (2.5.1)
     pastel (0.8.0)
       tty-color (~> 0.5)
     rspec (3.10.0)
@@ -37,6 +38,7 @@ PLATFORMS
 DEPENDENCIES
   artii (~> 2.1)
   colorize (~> 0.8.1)
+  json (~> 2.5)
   rspec (~> 3.10)
   tty-prompt (~> 0.23.1)
 
