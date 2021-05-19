@@ -197,6 +197,8 @@ end
 def challenge_selection
 
     level_one = [['I','I','I','I'],['IV','IV','I','I'],['V','V','I','V']]
+    level_two = [['I','IV','I','I'],['IV','IV','I','I'],['V','V','I','V']]
+    level_three = [['I','IV','I','I'],['IV','IV','I','VI'],['ii','V','I','V']]
 
     prompt = TTY::Prompt.new
 
@@ -254,16 +256,61 @@ def challenge_selection
             puts "Great! Lets do a level 2 chord progression today" 
             puts "This is the chord progression we will work on in Roman Numerals"
             puts level_two
-            sleep (2)
-            key_signature_selection    
+
+            # Check if user wants to change level
+            choices = [
+                {name: 'Yes', value: 1},
+                {name: 'No', value: 2},
+                {name: 'Exit', value: 3}
+   
+            ]
+
+            user_progression_check = prompt.select("Are you happy with this selection?", choices)
+
+            case
+
+                when 1
+                
+                    key_signature_selection  
+                
+                when 2
+                    puts "You said no"
+
+                when 3
+                    puts "Exiting application..."
+            
+            end
+            
 
         when 3
     
             puts "Great! Lets do a level 3 chord progression today" 
             puts "This is the chord progression we will work on in Roman Numerals"
-            puts level_two
-            sleep (2)
-            key_signature_selection  
+            puts level_three
+            
+            # Check if user wants to change level
+            choices = [
+                {name: 'Yes', value: 1},
+                {name: 'No', value: 2},
+                {name: 'Exit', value: 3}
+   
+            ]
+
+            user_progression_check = prompt.select("Are you happy with this selection?", choices)
+
+            case
+
+                when 1
+                
+                    key_signature_selection  
+                
+                when 2
+                    puts "You said no"
+
+                when 3
+                    puts "Exiting application..."
+            
+            end
     
         when 4
     
