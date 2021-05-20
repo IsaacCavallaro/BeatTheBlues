@@ -1,4 +1,5 @@
 require 'tty-prompt'
+require 'colorize'
 
 def prompt_one(username)
 
@@ -11,7 +12,7 @@ def prompt_one(username)
     choices = [
 
         {name: 'Generate a 12 bar blues progression', value: 1},
-        {name: 'Check your logged practice', value: 2},
+        {name: 'Store and view your logged practice', value: 2},
         {name: 'Exit', value: 3}
     ]
     
@@ -25,14 +26,16 @@ def prompt_one(username)
 
         when 2
             
-            puts "Lets check your logged practice..."
+            json_method(username)
 
         when 3    
 
         system("clear")    
         welcome_page
-        puts "Exit application"
-        sleep (1)
+        puts "Application closed"
+        puts "------------------------------"
+        puts "Thanks for using BeatTheBlues!"
+       
     end
 
 end
