@@ -24,6 +24,7 @@ def username_prompt
 
     username_check = prompt.select("Are you happy with your username?", choices)
 
+    # Check if user wants to change username
     case username_check
     when 1
         system("clear")    

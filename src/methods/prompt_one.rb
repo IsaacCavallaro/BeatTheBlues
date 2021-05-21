@@ -12,7 +12,7 @@ def prompt_one(username)
     choices = [
 
         {name: 'Generate a 12 bar blues progression', value: 1},
-        {name: 'Store and view your logged practice', value: 2},
+        {name: 'View your logged practice', value: 2},
         {name: 'Exit', value: 3}
     ]
     
@@ -26,7 +26,8 @@ def prompt_one(username)
 
         when 2
             
-            json_method(username)
+            write_json_file(username)
+            #add method
 
         when 3    
 

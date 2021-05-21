@@ -1,43 +1,80 @@
 require 'json'
+require 'colorize'
 
-
-
-def json_method(username)
-
-    # system("clear") 
-    
-    # welcome_page
-
-    #Reading the file
-    file = File.read('log.json')
-
-    # # #Parsing the file into hash
-    data_hash = JSON.parse(file)
-
-
-    puts data_hash
-
+class NotValidJsonError < StandardError
 end
 
-json_method("Teej")
+class FileNotFoundError < StandardError
+end
 
 
+# WRITE TO JSON FILE
+def write_json_file(username)
 
-def write_json_file
+    #ERROR HANDLING
+    file_path = './log.json'
+    begin
+        file = File.read(file_path)
 
-    # log = {name: "Musician"}
+    rescue => e
+        raise FileNotFoundError,"Could not find file at #{file_path}"
+        puts e.message
+        puts e.backtrace.inspect
+    end
+
+    begin 
+
+        json = JSON.parse(file)
+
+    rescue => e
+        raise NotValidJsonError,"Input is not valid Json at #{file_path}"
+        puts e.message
+        puts e.backtrace.inspect
+    end
+
+    log_hash = Hash.new 
+
+
+    log_hash["name"] = username
+
+    puts "Which Level did you practice today?".colorize(:blue)
+    log_hash ["Level"] = gets.chomp
+    puts "What Key Signature did you practice?".colorize(:cyan)
+    log_hash ["Key"] = gets.chomp
+
     # log_hash = JSON.generate(log)
 
-    # puts log_hash
+    json.push(log_hash)
 
-    # data_hash.push(log_hash)
+    File.open('./log.json', 'w') do |f|
+        f.puts JSON.pretty_generate(json)
+    end
 
+    # File.write('./log.json', JSON.dump(arr))
 end
 
 
 
-#insert username!
+# WRITE TO JSON FILE
+def read_json_file(username)
 
-# puts data_hash[0]["name"]
+    #ERROR HANDLING
+
+    file = File.read('./log.json')
+
+    json = JSON.parse(file)
+
+    json.each do |hash| 
+        if hash["Name"] == username 
+            puts "Your Level is #{hash["Level"]} and Key #{hash["Key"]} is"
+        end
+    end
+
+end
+
+write_json_file("test")
+
+
+
 
 

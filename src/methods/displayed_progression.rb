@@ -183,4 +183,18 @@ end
 display_level_3_natural_progression
 
 
+############################################  LUCKY DIP PROGRESSIONS  #################################################
+
+$lucky_dip_array = [$level_one_flats_array, $level_one_sharps_array, $level_one_c_blues, $level_two_flats_array, $level_two_sharps_array, $level_two_c_blues, $level_three_flats_array, $level_three_sharps_array, $level_three_c_blues  ]
+
+def display_lucky_dip_progression
+
+    $collapsed_lucky_dip_array = $lucky_dip_array.sample
+    puts $collapsed_lucky_dip_array.sample
+
+end
+
+#call method lucky dip method
+
+
 

@@ -19,6 +19,8 @@ def key_signature_selection(username, selected_level)
     
     selected_key = prompt.select("Great! We're almost there #{username}! Now select if you want any sharps or flats in you key signature:", choices)
 
+
+
     case selected_key
     when 1
             

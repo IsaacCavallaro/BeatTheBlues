@@ -180,6 +180,8 @@ def challenge_selection(username)
     
             puts "Hip choice #{username}!" 
             puts "Please wait while BeatTheBlues generates a random 12 bar progression from any key and any level!" 
+            sleep (2)
+            display_lucky_dip_progression
     
         when 5
 

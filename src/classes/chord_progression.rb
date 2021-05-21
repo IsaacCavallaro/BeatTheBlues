@@ -1,7 +1,6 @@
 ############################################  CHORD PROGRESSION CLASS  #################################################
 class ChordProgression 
 
-    attr_accessor :progression, :key, :chords
     attr_reader :progression, :key, :chords
 
     def initialize(progression, key, chords)
@@ -104,8 +103,6 @@ level_three = [['I','IV','I','I'],['IV','IV','I','VI'],['ii','V','I','V']]
 ########  All levels array #######
 levels_array = [level_one, level_two, level_three]
 
-# lucky_dip = levels_array.sample
-
 
 ########  Level one array of objects #######
 
@@ -129,6 +126,7 @@ level_three_sharps_array = [level_three_g_blues, level_three_d_blues, level_thre
 level_three_natural_array = [level_three_c_blues]
 
 
-puts level_one_flats_array.sample
+
+# puts level_one_flats_array.sample
 
 

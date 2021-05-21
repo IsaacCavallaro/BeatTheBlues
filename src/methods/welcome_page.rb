@@ -3,7 +3,6 @@ require 'colorize'
 
 #Home page logo#
 def welcome_page
-    
 
     logo = Artii::Base.new
     logo.asciify('BeatTheBlues')
@@ -22,8 +21,9 @@ def welcome_page
     puts "|   |   |   |   |   |   |   |   |   |   |".colorize(:cyan)
     puts "|___|___|___|___|___|___|___|___|___|___|".colorize(:cyan)
 
-    puts " "
+    puts " "    
 
 end
 
 welcome_page
+
