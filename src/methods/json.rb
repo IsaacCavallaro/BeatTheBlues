@@ -13,6 +13,7 @@ def write_json_file(username)
 
     #ERROR HANDLING
     file_path = './log.json'
+    
     begin
         file = File.read(file_path)
 
@@ -72,7 +73,7 @@ def read_json_file(username)
 
 end
 
-write_json_file("test")
+# write_json_file("test")
 
 
 

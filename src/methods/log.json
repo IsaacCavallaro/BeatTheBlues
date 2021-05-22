@@ -3,5 +3,10 @@
     "name": "test",
     "Level": "5",
     "Key": "b flat"
+  },
+  {
+    "name": "test",
+    "Level": "5",
+    "Key": "7"
   }
 ]
