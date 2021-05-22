@@ -1,11 +1,11 @@
 [
   {
-    "name": "Ben",
+    "Name": "Ben",
     "Level": "Level One",
     "Key": "A sharp"
   },
   {
-    "name": "Ben",
+    "Name": "Ben",
     "Level": "Level Three",
     "Key": "C flat"
   }

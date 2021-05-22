@@ -83,7 +83,7 @@ def write_json_file(username)
 
     log_hash = Hash.new 
 
-    log_hash["name"] = username
+    log_hash["Name"] = username
 
     puts "Which Level did you practice today?".colorize(:blue)
     log_hash ["Level"] = gets.chomp
@@ -108,13 +108,14 @@ def read_json_file(username)
 
     json = JSON.parse(file)
 
-    p json
+    # p json
+    # puts username
 
-    # json.each do |hash| 
-    #     if hash["Name"] == username 
-    #         p "#{hash["Level"]} in the key of #{hash["Key"]}"
-    #     end
-    # end
+    json.each do |hash| 
+        if hash["Name"] == username 
+            p "#{hash["Level"]} in the key of #{hash["Key"]}"
+        end
+    end
 
 end
 
