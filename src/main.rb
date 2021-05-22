@@ -8,13 +8,10 @@ require_relative 'methods/key_signature_selection.rb'
 require_relative 'methods/level_plus_key_calculator.rb'
 require_relative 'methods/displayed_progression.rb'
 require_relative 'methods/json.rb'
-# require_relative 'methods/log.json'
-
 
 
 #Relative classes
 require_relative 'classes/chord_progression'
-
 
 
 #run program

@@ -26,8 +26,7 @@ def prompt_one(username)
 
         when 2
             
-            write_json_file(username)
-            #add method
+           log_selection(username)
 
         when 3    
 

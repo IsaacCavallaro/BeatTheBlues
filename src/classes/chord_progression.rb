@@ -127,6 +127,6 @@ level_three_natural_array = [level_three_c_blues]
 
 
 
-# puts level_one_flats_array.sample
+
 
 
