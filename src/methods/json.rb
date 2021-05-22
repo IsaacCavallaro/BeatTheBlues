@@ -63,7 +63,7 @@ def write_json_file(username)
     
     begin
 
-      file =  File.read(File.expand_path( "log.json", __dir__))
+      file =  File.read(File.expand_path( "../log.json", __dir__))
 
     rescue => e
         raise FileNotFoundError,"Could not find file"
@@ -92,7 +92,7 @@ def write_json_file(username)
 
     json.push(log_hash)
 
-    File.open('./log.json', 'a') do |f|
+    File.open('./log.json', 'w') do |f|
         f.puts JSON.pretty_generate(json)
     end
 
@@ -108,13 +108,13 @@ def read_json_file(username)
 
     json = JSON.parse(file)
 
-    # p json
+    p json
 
-    json.each do |hash| 
-        if hash["Name"] == username 
-            p "#{hash["Level"]} in the key of #{hash["Key"]}"
-        end
-    end
+    # json.each do |hash| 
+    #     if hash["Name"] == username 
+    #         p "#{hash["Level"]} in the key of #{hash["Key"]}"
+    #     end
+    # end
 
 end
 

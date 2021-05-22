@@ -1,25 +1,12 @@
-
 [
   {
-  },
-  {
-    "Name": "Army",
+    "name": "Ben",
     "Level": "Level One",
-    "Key": "C flat"
-  },
-  {
-    "Name": "Army",
-    "Level": "Level One",
-    "Key": "C flat"
-  },
-  {
-    "Name": "Army",
-    "Level": "Level Tw0",
-    "Key": "B flat"
+    "Key": "A sharp"
   },
   {
     "name": "Ben",
-    "Level": "Level 50",
-    "Key": "A sharp"
+    "Level": "Level Three",
+    "Key": "C flat"
   }
 ]
