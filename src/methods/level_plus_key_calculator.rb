@@ -30,7 +30,7 @@ def level_plus_key_calculator(username, selected_level, selected_key, user_progr
         case
         when selected_key == 1
 
-            display_level_2_flats_progression()
+            display_level_2_flats_progression(username, selected_level, selected_key, user_progression_check)
 
         when selected_key == 2
 

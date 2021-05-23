@@ -38,7 +38,7 @@ def display_level_1_flats_progression(username, selected_level, selected_key, us
         challenge_selection(username)
 
     when 2
-            
+        
         displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
 
     when 3    
@@ -99,9 +99,39 @@ $level_two_c_flat_blues = ChordProgression.new([['I','IV','I','I'],['IV','IV','I
 $level_two_flats_array = [$level_two_f_blues, $level_two_b_flat_blues, $level_two_e_flat_blues, $level_two_a_flat_blues, $level_two_d_flat_blues, $level_two_g_flat_blues, $level_two_c_flat_blues]
 
 
-def display_level_2_flats_progression
+def display_level_2_flats_progression(username, selected_level, selected_key, user_progression_check)
 
     puts $level_two_flats_array.sample
+
+    prompt = TTY::Prompt.new(active_color: :blue)
+
+    choices = [
+
+        {name: 'Return to BeatTheBlues?', value: 1},
+        {name: 'Store this session in your Practice Log?', value: 2},
+        {name: 'Exit', value: 3}
+    ]
+    
+    user_input = prompt.select("What would you like to do next #{username}?", choices)
+
+    case user_input
+    when 1
+
+        challenge_selection(username)
+
+    when 2
+        
+        displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
+
+    when 3    
+
+        system("clear")    
+        welcome_page
+        puts "Application closed"
+        puts "------------------------------"
+        puts "Thanks for using BeatTheBlues!"
+       
+    end
 
 end
 

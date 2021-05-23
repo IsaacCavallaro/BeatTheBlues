@@ -134,12 +134,42 @@ def displayed_progression_write_json_file(username, selected_level, selected_key
 
     log_hash["Name"] = username
 
-    log_hash ["Level"] = selected_level
+    #checking stored user level
+    if selected_level == 1
+        log_hash ["Level"] = "Level One"
+    end
 
-    log_hash["Key"] = selected_key
+    if selected_level == 2
+        log_hash ["Level"] = "Level Two"
+
+    end
+
+    if selected_level == 3
+        log_hash ["Level"] = "Level Three"
+    end
+
+    #checking stored user key
+    if selected_key == 1
+        log_hash ["Key"] = "Flats"
+    end
+
+    if selected_level == 2
+        log_hash ["Key"] = "Sharps"
+
+    end
+
+    if selected_level == 3
+        log_hash ["Key"] = "Natural"
+    end
+
+    
+    # log_hash ["Level"] = selected_level
+
+    # log_hash["Key"] = selected_key
 
     puts "Add a date to your logged session".colorize(:blue)
     log_hash ["Date"] = gets.chomp
+
 
     json.push(log_hash)
 
