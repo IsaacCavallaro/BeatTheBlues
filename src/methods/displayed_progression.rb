@@ -21,35 +21,7 @@ def display_level_1_flats_progression(username, selected_level, selected_key, us
 
     puts $level_one_flats_array.sample
 
-    prompt = TTY::Prompt.new(active_color: :blue)
-
-    choices = [
-
-        {name: 'Return to BeatTheBlues?', value: 1},
-        {name: 'Store this session in your Practice Log?', value: 2},
-        {name: 'Exit', value: 3}
-    ]
-    
-    user_input = prompt.select("What would you like to do next #{username}?", choices)
-
-    case user_input
-    when 1
-
-        challenge_selection(username)
-
-    when 2
-        
-        displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
-
-    when 3    
-
-        system("clear")    
-        welcome_page
-        puts "Application closed"
-        puts "------------------------------"
-        puts "Thanks for using BeatTheBlues!"
-       
-    end
+    check_in_prompt(username, selected_level, selected_key, user_progression_check)
     
 end
 
@@ -71,35 +43,7 @@ def display_level_1_sharps_progression(username, selected_level, selected_key, u
 
     puts $level_one_sharps_array.sample
 
-    prompt = TTY::Prompt.new(active_color: :blue)
-
-    choices = [
-
-        {name: 'Return to BeatTheBlues?', value: 1},
-        {name: 'Store this session in your Practice Log?', value: 2},
-        {name: 'Exit', value: 3}
-    ]
-    
-    user_input = prompt.select("What would you like to do next #{username}?", choices)
-
-    case user_input
-    when 1
-
-        challenge_selection(username)
-
-    when 2
-        
-        displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
-
-    when 3    
-
-        system("clear")    
-        welcome_page
-        puts "Application closed"
-        puts "------------------------------"
-        puts "Thanks for using BeatTheBlues!"
-       
-    end
+    check_in_prompt(username, selected_level, selected_key, user_progression_check)
 
 end
 
@@ -133,35 +77,7 @@ def display_level_2_flats_progression(username, selected_level, selected_key, us
 
     puts $level_two_flats_array.sample
 
-    prompt = TTY::Prompt.new(active_color: :blue)
-
-    choices = [
-
-        {name: 'Return to BeatTheBlues?', value: 1},
-        {name: 'Store this session in your Practice Log?', value: 2},
-        {name: 'Exit', value: 3}
-    ]
-    
-    user_input = prompt.select("What would you like to do next #{username}?", choices)
-
-    case user_input
-    when 1
-
-        challenge_selection(username)
-
-    when 2
-        
-        displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
-
-    when 3    
-
-        system("clear")    
-        welcome_page
-        puts "Application closed"
-        puts "------------------------------"
-        puts "Thanks for using BeatTheBlues!"
-       
-    end
+    check_in_prompt(username, selected_level, selected_key, user_progression_check)
 
 end
 
@@ -182,35 +98,7 @@ def display_level_2_sharps_progression(username, selected_level, selected_key, u
 
     puts $level_two_sharps_array.sample
 
-    prompt = TTY::Prompt.new(active_color: :blue)
-
-    choices = [
-
-        {name: 'Return to BeatTheBlues?', value: 1},
-        {name: 'Store this session in your Practice Log?', value: 2},
-        {name: 'Exit', value: 3}
-    ]
-    
-    user_input = prompt.select("What would you like to do next #{username}?", choices)
-
-    case user_input
-    when 1
-
-        challenge_selection(username)
-
-    when 2
-        
-        displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
-
-    when 3    
-
-        system("clear")    
-        welcome_page
-        puts "Application closed"
-        puts "------------------------------"
-        puts "Thanks for using BeatTheBlues!"
-       
-    end
+    check_in_prompt(username, selected_level, selected_key, user_progression_check)
 
 end
 
@@ -222,35 +110,7 @@ def display_level_2_natural_progression(username, selected_level, selected_key, 
 
     puts $level_two_c_blues
 
-    prompt = TTY::Prompt.new(active_color: :blue)
-
-    choices = [
-
-        {name: 'Return to BeatTheBlues?', value: 1},
-        {name: 'Store this session in your Practice Log?', value: 2},
-        {name: 'Exit', value: 3}
-    ]
-    
-    user_input = prompt.select("What would you like to do next #{username}?", choices)
-
-    case user_input
-    when 1
-
-        challenge_selection(username)
-
-    when 2
-        
-        displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
-
-    when 3    
-
-        system("clear")    
-        welcome_page
-        puts "Application closed"
-        puts "------------------------------"
-        puts "Thanks for using BeatTheBlues!"
-       
-    end
+    check_in_prompt(username, selected_level, selected_key, user_progression_check)
 
 end
 
@@ -272,6 +132,8 @@ def display_level_3_flats_progression(username, selected_level, selected_key, us
 
     puts $level_three_flats_array.sample
 
+    check_in_prompt(username, selected_level, selected_key, user_progression_check)
+
 end
 
 ########  Level Three Sharp Progressions #######
@@ -291,35 +153,7 @@ def display_level_3_sharps_progression(username, selected_level, selected_key, u
 
     puts $level_three_sharps_array.sample
 
-    prompt = TTY::Prompt.new(active_color: :blue)
-
-    choices = [
-
-        {name: 'Return to BeatTheBlues?', value: 1},
-        {name: 'Store this session in your Practice Log?', value: 2},
-        {name: 'Exit', value: 3}
-    ]
-    
-    user_input = prompt.select("What would you like to do next #{username}?", choices)
-
-    case user_input
-    when 1
-
-        challenge_selection(username)
-
-    when 2
-        
-        displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
-
-    when 3    
-
-        system("clear")    
-        welcome_page
-        puts "Application closed"
-        puts "------------------------------"
-        puts "Thanks for using BeatTheBlues!"
-       
-    end
+    check_in_prompt(username, selected_level, selected_key, user_progression_check)
 
 end
 
@@ -331,35 +165,7 @@ def display_level_3_natural_progression(username, selected_level, selected_key, 
 
     puts $level_three_c_blues
 
-    prompt = TTY::Prompt.new(active_color: :blue)
-
-    choices = [
-
-        {name: 'Return to BeatTheBlues?', value: 1},
-        {name: 'Store this session in your Practice Log?', value: 2},
-        {name: 'Exit', value: 3}
-    ]
-    
-    user_input = prompt.select("What would you like to do next #{username}?", choices)
-
-    case user_input
-    when 1
-
-        challenge_selection(username)
-
-    when 2
-        
-        displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
-
-    when 3    
-
-        system("clear")    
-        welcome_page
-        puts "Application closed"
-        puts "------------------------------"
-        puts "Thanks for using BeatTheBlues!"
-       
-    end
+    check_in_prompt(username, selected_level, selected_key, user_progression_check)
 
 end
 
@@ -425,4 +231,40 @@ def display_lucky_dip_progression
 
     end
 
+end
+
+
+#Method called after progression is displayed
+def check_in_prompt(username, selected_level, selected_key, user_progression_check)
+
+    prompt = TTY::Prompt.new(active_color: :blue)
+
+    choices = [
+
+        {name: 'Return to BeatTheBlues?', value: 1},
+        {name: 'Store this session in your Practice Log?', value: 2},
+        {name: 'Exit', value: 3}
+    ]
+    
+    user_input = prompt.select("What would you like to do next #{username}?", choices)
+
+    case user_input
+    when 1
+
+        challenge_selection(username)
+
+    when 2
+        
+        displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
+
+    when 3    
+
+        system("clear")    
+        welcome_page
+        puts "Application closed"
+        puts "------------------------------"
+        puts "Thanks for using BeatTheBlues!"
+       
+    end
+    
 end
