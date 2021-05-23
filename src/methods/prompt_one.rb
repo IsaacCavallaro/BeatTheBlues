@@ -11,24 +11,24 @@ def prompt_one(username)
 
     choices = [
 
-        {name: 'Generate a 12 bar blues progression', value: 1},
-        {name: 'View your logged practice', value: 2},
+        {name: 'BeatTheBlues', value: 1},
+        {name: 'Practice log', value: 2},
         {name: 'Exit', value: 3}
     ]
     
-    user_input = prompt.select("What would you like to do today #{username}?", choices)
+    user_input = prompt.select("What would you like to do next #{username}?", choices)
 
 
     case user_input
-        when 1
+    when 1
 
-            challenge_selection(username)
+        challenge_selection(username)
 
-        when 2
+    when 2
             
-           log_selection(username)
+        log_selection(username)
 
-        when 3    
+    when 3    
 
         system("clear")    
         welcome_page

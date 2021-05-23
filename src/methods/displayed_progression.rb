@@ -1,4 +1,6 @@
 require_relative '../classes/chord_progression'
+require 'tty-prompt'
+require 'colorize'
 
 ############################################  LEVEL ONE PROGRESSIONS  #################################################
 
@@ -15,14 +17,42 @@ $level_one_c_flat_blues = ChordProgression.new([['I','I','I','I'],['IV','IV','I'
 $level_one_flats_array = [$level_one_f_blues, $level_one_b_flat_blues, $level_one_e_flat_blues, $level_one_a_flat_blues, $level_one_d_flat_blues, $level_one_g_flat_blues, $level_one_c_flat_blues]
 
 #Method to display a random level 1 progression with flats
-def display_level_1_flats_progression
+def display_level_1_flats_progression(username, selected_level, selected_key, user_progression_check)
 
     puts $level_one_flats_array.sample
 
+    prompt = TTY::Prompt.new(active_color: :blue)
+
+    choices = [
+
+        {name: 'Return to BeatTheBlues?', value: 1},
+        {name: 'Store this session in your Practice Log?', value: 2},
+        {name: 'Exit', value: 3}
+    ]
+    
+    user_input = prompt.select("What would you like to do next #{username}?", choices)
+
+    case user_input
+    when 1
+
+        challenge_selection(username)
+
+    when 2
+            
+        displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
+
+    when 3    
+
+        system("clear")    
+        welcome_page
+        puts "Application closed"
+        puts "------------------------------"
+        puts "Thanks for using BeatTheBlues!"
+       
+    end
+    
 end
 
-#call method level one flats progression method
-display_level_1_flats_progression
 
 ########  Level One Sharp Progressions - global variables #######
 $level_one_g_blues = ChordProgression.new([['I','I','I','I'],['IV','IV','I','I'],['V','V','I','V']],"G Major",[['G','G','G','G'],['C','C','G','G'],['D','D','G','D']])
@@ -43,10 +73,6 @@ def display_level_1_sharps_progression
 
 end
 
-#call method level one sharps progression method
-display_level_1_sharps_progression
-
-
 ########  Level One Natural Progressions #######
 $level_one_c_blues = ChordProgression.new([['I','I','I','I'],['IV','IV','I','I'],['V','V','I','V']],"C Major",[['C','C','C','C'],['F','F','C','C'],['G','G','C','G']])
 
@@ -56,9 +82,6 @@ def display_level_1_natural_progression
     puts $level_one_c_blues
 
 end
-
-#call method level one natural progression method
-display_level_1_natural_progression
 
 ############################################  LEVEL TWO PROGRESSIONS  #################################################
 
@@ -82,10 +105,6 @@ def display_level_2_flats_progression
 
 end
 
-#call method level two flats progression method
-display_level_2_flats_progression
-
-
 ########  Level Two Sharp Progressions - global variables #######
 $level_two_g_blues = ChordProgression.new([['I','IV','I','I'],['IV','IV','I','I'],['V','V','I','V']],"G Major",[['Bb','Bb','Bb','Bb'],['Eb','Eb','Bb','Bb'],['Eb','Eb','Bb','Eb']])
 $level_two_d_blues = ChordProgression.new([['I','IV','I','I'],['IV','IV','I','I'],['V','V','I','V']],"D Major",[['Bb','Bb','Bb','Bb'],['Eb','Eb','Bb','Bb'],['Eb','Eb','Bb','Eb']])
@@ -105,10 +124,6 @@ def display_level_2_sharps_progression
 
 end
 
-#call method level two sharps progression method
-display_level_2_sharps_progression
-
-
 ########  Level Two Natural Progressions - global variables #######
 $level_two_c_blues = ChordProgression.new([['I','IV','I','I'],['IV','IV','I','I'],['V','V','I','V']],"C Major",[['C','C','C','C'],['F','F','C','C'],['G','G','C','G']])
 
@@ -118,9 +133,6 @@ def display_level_2_natural_progression
     puts $level_two_c_blues
 
 end
-
-#call method level two natural progression method
-display_level_2_natural_progression
 
 ############################################  LEVEL THREE PROGRESSIONS  #################################################
 
@@ -142,10 +154,6 @@ def display_level_3_flats_progression
 
 end
 
-#call method level three flats progression method
-display_level_3_flats_progression
-
-
 ########  Level Three Sharp Progressions #######
 $level_three_g_blues = ChordProgression.new([['I','IV','I','I'],['IV','IV','I','VI'],['ii','V','I','V']],"G Major",[['Bb','Bb','Bb','Bb'],['Eb','Eb','Bb','Bb'],['Eb','Eb','Bb','Eb']])
 $level_three_d_blues = ChordProgression.new([['I','IV','I','I'],['IV','IV','I','VI'],['ii','V','I','V']],"D Major",[['Bb','Bb','Bb','Bb'],['Eb','Eb','Bb','Bb'],['Eb','Eb','Bb','Eb']])
@@ -165,10 +173,6 @@ def display_level_3_sharps_progression
 
 end
 
-#call method level three sharps progression method
-display_level_3_sharps_progression
-
-
 ########  Level Three natural Progressions #######
 $level_three_c_blues = ChordProgression.new([['I','IV','I','I'],['VI','VI','I','I'],['ii','V','I','V']],"C Major",[['C','C','C','C'],['F','F','C','C'],['G','G','C','G']])
 
@@ -178,10 +182,6 @@ def display_level_3_natural_progression
     puts $level_three_c_blues
 
 end
-
-#call method level three natural progression method
-display_level_3_natural_progression
-
 
 ############################################  LUCKY DIP PROGRESSIONS  #################################################
 

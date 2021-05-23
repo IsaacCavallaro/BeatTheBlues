@@ -8,7 +8,7 @@ end
 class FileNotFoundError < StandardError
 end
 
-
+# LOG SELECTION MENU 
 def log_selection(username)
 
     system("clear") 
@@ -25,7 +25,7 @@ def log_selection(username)
 
     ]
 
-    log_selection_options = prompt.select("What would you like to do today #{username}?", choices)
+    log_selection_options = prompt.select("What would you like to do next #{username}?", choices)
 
     case log_selection_options
 
@@ -58,7 +58,7 @@ def log_selection(username)
 end 
 
 
-# WRITE TO JSON FILE
+# WRITE TO JSON FILE FROM LOG SELECTION MENU
 def write_json_file(username)
     
     begin
@@ -89,6 +89,8 @@ def write_json_file(username)
     log_hash ["Level"] = gets.chomp
     puts "What Key Signature did you practice?".colorize(:cyan)
     log_hash ["Key"] = gets.chomp
+    puts "Add a date to your logged session".colorize(:blue)
+    log_hash ["Date"] = gets.chomp
 
     json.push(log_hash)
 
@@ -113,13 +115,39 @@ def read_json_file(username)
 
     json.each do |hash| 
         if hash["Name"] == username 
-            p "#{hash["Level"]} in the key of #{hash["Key"]}"
+            p "On #{hash["Date"]} #{username} logged #{hash["Level"]} in the key of #{hash["Key"]}"
         end
     end
 
 end
 
 
+# WRITE TO JSON FILE FROM DISPLAYED_PROGRESSION
+
+def displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
+
+    file =  File.read(File.expand_path( "../log.json", __dir__))
+
+    json = JSON.parse(file)
+
+    log_hash = Hash.new 
+
+    log_hash["Name"] = username
+
+    log_hash ["Level"] = selected_level
+
+    log_hash["Key"] = selected_key
+
+    puts "Add a date to your logged session".colorize(:blue)
+    log_hash ["Date"] = gets.chomp
+
+    json.push(log_hash)
+
+    File.open('./log.json', 'w') do |f|
+        f.puts JSON.pretty_generate(json)
+    end
+
+end
 
 
 
