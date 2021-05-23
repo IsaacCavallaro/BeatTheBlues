@@ -67,9 +67,39 @@ $level_one_c_sharp_blues = ChordProgression.new([['I','I','I','I'],['IV','IV','I
 $level_one_sharps_array = [$level_one_g_blues, $level_one_d_blues, $level_one_a_blues, $level_one_e_blues, $level_one_b_blues, $level_one_f_sharp_blues, $level_one_c_sharp_blues]
 
 #Method to display a random level 1 progression with sharps
-def display_level_1_sharps_progression
+def display_level_1_sharps_progression(username, selected_level, selected_key, user_progression_check)
 
     puts $level_one_sharps_array.sample
+
+    prompt = TTY::Prompt.new(active_color: :blue)
+
+    choices = [
+
+        {name: 'Return to BeatTheBlues?', value: 1},
+        {name: 'Store this session in your Practice Log?', value: 2},
+        {name: 'Exit', value: 3}
+    ]
+    
+    user_input = prompt.select("What would you like to do next #{username}?", choices)
+
+    case user_input
+    when 1
+
+        challenge_selection(username)
+
+    when 2
+        
+        displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
+
+    when 3    
+
+        system("clear")    
+        welcome_page
+        puts "Application closed"
+        puts "------------------------------"
+        puts "Thanks for using BeatTheBlues!"
+       
+    end
 
 end
 
@@ -77,7 +107,7 @@ end
 $level_one_c_blues = ChordProgression.new([['I','I','I','I'],['IV','IV','I','I'],['V','V','I','V']],"C Major",[['C','C','C','C'],['F','F','C','C'],['G','G','C','G']])
 
 
-def display_level_1_natural_progression
+def display_level_1_natural_progression(username, selected_level, selected_key, user_progression_check)
 
     puts $level_one_c_blues
 
@@ -148,9 +178,39 @@ $level_two_c_sharp_blues = ChordProgression.new([['I','IV','I','I'],['IV','IV','
 $level_two_sharps_array = [$level_two_g_blues, $level_two_d_blues, $level_two_a_blues, $level_two_e_blues, $level_two_b_blues, $level_two_f_sharp_blues, $level_two_c_sharp_blues]
 
 
-def display_level_2_sharps_progression
+def display_level_2_sharps_progression(username, selected_level, selected_key, user_progression_check)
 
     puts $level_two_sharps_array.sample
+
+    prompt = TTY::Prompt.new(active_color: :blue)
+
+    choices = [
+
+        {name: 'Return to BeatTheBlues?', value: 1},
+        {name: 'Store this session in your Practice Log?', value: 2},
+        {name: 'Exit', value: 3}
+    ]
+    
+    user_input = prompt.select("What would you like to do next #{username}?", choices)
+
+    case user_input
+    when 1
+
+        challenge_selection(username)
+
+    when 2
+        
+        displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
+
+    when 3    
+
+        system("clear")    
+        welcome_page
+        puts "Application closed"
+        puts "------------------------------"
+        puts "Thanks for using BeatTheBlues!"
+       
+    end
 
 end
 
@@ -158,9 +218,39 @@ end
 $level_two_c_blues = ChordProgression.new([['I','IV','I','I'],['IV','IV','I','I'],['V','V','I','V']],"C Major",[['C','C','C','C'],['F','F','C','C'],['G','G','C','G']])
 
 
-def display_level_2_natural_progression
+def display_level_2_natural_progression(username, selected_level, selected_key, user_progression_check)
 
     puts $level_two_c_blues
+
+    prompt = TTY::Prompt.new(active_color: :blue)
+
+    choices = [
+
+        {name: 'Return to BeatTheBlues?', value: 1},
+        {name: 'Store this session in your Practice Log?', value: 2},
+        {name: 'Exit', value: 3}
+    ]
+    
+    user_input = prompt.select("What would you like to do next #{username}?", choices)
+
+    case user_input
+    when 1
+
+        challenge_selection(username)
+
+    when 2
+        
+        displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
+
+    when 3    
+
+        system("clear")    
+        welcome_page
+        puts "Application closed"
+        puts "------------------------------"
+        puts "Thanks for using BeatTheBlues!"
+       
+    end
 
 end
 
@@ -178,7 +268,7 @@ $level_three_c_flat_blues = ChordProgression.new([['I','IV','I','I'],['IV','IV',
 # Array of level three flats progressions
 $level_three_flats_array = [$level_three_f_blues, $level_three_b_flat_blues, $level_three_e_flat_blues, $level_three_a_flat_blues, $level_three_d_flat_blues, $level_three_g_flat_blues, $level_three_c_flat_blues]
 
-def display_level_3_flats_progression
+def display_level_3_flats_progression(username, selected_level, selected_key, user_progression_check)
 
     puts $level_three_flats_array.sample
 
@@ -197,9 +287,39 @@ $level_three_c_sharp_blues = ChordProgression.new([['I','IV','I','I'],['IV','IV'
 $level_three_sharps_array = [$level_three_g_blues, $level_three_d_blues, $level_three_a_blues, $level_three_e_blues, $level_three_b_blues, $level_three_f_sharp_blues, $level_three_c_sharp_blues]
 
 
-def display_level_3_sharps_progression
+def display_level_3_sharps_progression(username, selected_level, selected_key, user_progression_check)
 
     puts $level_three_sharps_array.sample
+
+    prompt = TTY::Prompt.new(active_color: :blue)
+
+    choices = [
+
+        {name: 'Return to BeatTheBlues?', value: 1},
+        {name: 'Store this session in your Practice Log?', value: 2},
+        {name: 'Exit', value: 3}
+    ]
+    
+    user_input = prompt.select("What would you like to do next #{username}?", choices)
+
+    case user_input
+    when 1
+
+        challenge_selection(username)
+
+    when 2
+        
+        displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
+
+    when 3    
+
+        system("clear")    
+        welcome_page
+        puts "Application closed"
+        puts "------------------------------"
+        puts "Thanks for using BeatTheBlues!"
+       
+    end
 
 end
 
@@ -207,25 +327,102 @@ end
 $level_three_c_blues = ChordProgression.new([['I','IV','I','I'],['VI','VI','I','I'],['ii','V','I','V']],"C Major",[['C','C','C','C'],['F','F','C','C'],['G','G','C','G']])
 
 
-def display_level_3_natural_progression
+def display_level_3_natural_progression(username, selected_level, selected_key, user_progression_check)
 
     puts $level_three_c_blues
 
+    prompt = TTY::Prompt.new(active_color: :blue)
+
+    choices = [
+
+        {name: 'Return to BeatTheBlues?', value: 1},
+        {name: 'Store this session in your Practice Log?', value: 2},
+        {name: 'Exit', value: 3}
+    ]
+    
+    user_input = prompt.select("What would you like to do next #{username}?", choices)
+
+    case user_input
+    when 1
+
+        challenge_selection(username)
+
+    when 2
+        
+        displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
+
+    when 3    
+
+        system("clear")    
+        welcome_page
+        puts "Application closed"
+        puts "------------------------------"
+        puts "Thanks for using BeatTheBlues!"
+       
+    end
+
 end
 
-############################################  LUCKY DIP PROGRESSIONS  #################################################
+############################################  LUCKY DIP #################################################
 
-$lucky_dip_array = [$level_one_flats_array, $level_one_sharps_array, $level_one_c_blues, $level_two_flats_array, $level_two_sharps_array, $level_two_c_blues, $level_three_flats_array, $level_three_sharps_array, $level_three_c_blues  ]
 
 def display_lucky_dip_progression
 
-    $collapsed_lucky_dip_array = $lucky_dip_array.sample
-    puts $collapsed_lucky_dip_array.sample
+    #Array of global variables which each hold their own array 
+    $lucky_dip_array = [$level_one_flats_array, $level_one_sharps_array, $level_one_c_blues, $level_two_flats_array, $level_two_sharps_array, $level_two_c_blues, $level_three_flats_array, $level_three_sharps_array, $level_three_c_blues]
+    
+    #Copy the array
+    $clone_lucky_dip_array = $lucky_dip_array.clone
+
+    #Reorder the array
+    lucky_dip = $lucky_dip_array.shuffle
+
+    #Loop to delete elements from array
+    until lucky_dip.length == 1
+
+        lucky_dip.shift
+        new_lucky_dip = lucky_dip.shift
+
+    end
+
+    if new_lucky_dip == $level_one_flats_array
+
+        final_lucky_dip = $level_one_flats_array.sample
+
+        puts final_lucky_dip
+
+    elsif new_lucky_dip == $level_one_sharps_array
+
+        final_lucky_dip = $level_one_sharps_array.sample
+
+        puts final_lucky_dip
+
+    elsif new_lucky_dip == $level_two_flats_array
+
+        final_lucky_dip = $level_two_flats_array.sample
+
+        puts final_lucky_dip
+
+    elsif new_lucky_dip == $level_two_sharps_array
+
+        final_lucky_dip = $level_two_sharps_array.sample
+
+        puts final_lucky_dip
+
+    elsif new_lucky_dip == $level_three_flats_array
+
+        final_lucky_dip = $level_three_flats_array.sample
+
+        puts final_lucky_dip
+
+    elsif new_lucky_dip == $level_three_sharps_array
+
+        final_lucky_dip = $level_three_sharps_array.sample
+
+        puts final_lucky_dip
+
+    else puts "This lucky dip was not so lucky! Better luck next time"
+
+    end
 
 end
-
-#call method lucky dip method
-
-
-
-

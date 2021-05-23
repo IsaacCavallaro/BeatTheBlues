@@ -1,125 +1,32 @@
 [
   {
-    "Name": "Ben",
-    "Level": "Level One",
-    "Key": "A sharp",
-    "Date": "Jan 11th"
-  },
-  {
-    "Name": "Ben",
-    "Level": "Level Three",
-    "Key": "C flat",
-    "Date": "Feb 15th"
-  },
-  {
-    "Name": "Isaac",
-    "Level": "Level five",
-    "Key": "C"
-  },
-  {
-    "Name": "Isaac",
-    "Level": "Level 5",
-    "Key": "F sharp",
-    "Date": "Jan 5th"
-  },
-  {
-    "Name": "Kaylee",
-    "Level": "Level One",
-    "Key": "F ",
-    "Date": "May 22"
-  },
-  {
-    "Name": "Sally",
-    "Level": "Level One",
-    "Key": "C flat",
-    "Date": "Jan 5th"
-  },
-  {
-    "Name": "Sammy",
-    "Level": 1,
-    "Key": 1,
-    "Date": "Jan 17"
-  },
-  {
-    "Name": "Newuser",
-    "Level": 1,
-    "Key": 1,
-    "Date": "Jan 4th"
-  },
-  {
-    "Name": "John",
-    "Level": 1,
-    "Key": 1,
-    "Date": "Feb 5th"
-  },
-  {
-    "Name": "Jane",
-    "Level": 1,
-    "Key": 1,
-    "Date": "May 22"
-  },
-  {
-    "Name": "Jane",
-    "Level": 1,
-    "Key": 1,
-    "Date": "Sept 5"
-  },
-  {
-    "Name": "New user",
-    "Level": "Level One",
-    "Key": "C flat",
-    "Date": "Jan 5th"
-  },
-  {
-    "Name": "Newuser",
-    "Level": 1,
-    "Key": 1,
-    "Date": "May 5th"
-  },
-  {
-    "Name": "Kaylee",
-    "Level": "clear",
-    "Key": "clear",
-    "Date": "clear"
-  },
-  {
-    "Name": "Ben",
-    "Level": 1,
-    "Key": 1,
-    "Date": "Jan 10"
-  },
-  {
-    "Name": "kaylee",
-    "Level": 1,
-    "Key": 1,
-    "Date": "Jan 50"
-  },
-  {
-    "Name": "Ben",
-    "Key": 1,
-    "Date": "May 50"
-  },
-  {
-    "Name": "Ben",
-    "Key": 1,
-    "Date": "June 6"
-  },
-  {
-    "Level": "Level One",
-    "Name": "Stacy",
-    "Key": 1,
-    "Date": "July 50"
-  },
-  {
-    "Level": "Level Two",
     "Name": "Jerry",
-    "Key": 1,
-    "Date": "May 5th"
+    "Level": "Level Three",
+    "Key": "Natural",
+    "Date": "May 10"
   },
   {
-    "Name": "Kat",
+    "Name": "Jerry",
     "Level": "Level Two",
     "Key": "Sharps",
-    "Date": "Sept 10"
+    "Date": "June 7th"
+  },
+  {
+    "Name": "Ben",
+    "Level": "Level Two",
+    "Key": "Sharps",
+    "Date": "May 20th"
+  },
+  {
+    "Name": "James",
+    "Level": "Level Three",
+    "Key": "Natural",
+    "Date": "June 1st"
+  },
+  {
+    "Name": "James",
+    "Level": "Level Two",
+    "Key": "Sharps",
+    "Date": "Feb 5th"
   }
 ]

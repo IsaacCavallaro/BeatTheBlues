@@ -110,12 +110,9 @@ def read_json_file(username)
 
     json = JSON.parse(file)
 
-    # p json
-    # puts username
-
     json.each do |hash| 
         if hash["Name"] == username 
-            p "On #{hash["Date"]} #{username} logged #{hash["Level"]} in the key of #{hash["Key"]}"
+            p "On #{hash["Date"]} #{username} logged  #{hash["Level"]}, #{hash["Key"]} -- BeatTheBlues"
         end
     end
 
@@ -162,20 +159,46 @@ def displayed_progression_write_json_file(username, selected_level, selected_key
         log_hash ["Key"] = "Natural"
     end
 
-    
-    # log_hash ["Level"] = selected_level
-
-    # log_hash["Key"] = selected_key
-
     puts "Add a date to your logged session".colorize(:blue)
     log_hash ["Date"] = gets.chomp
-
 
     json.push(log_hash)
 
     File.open('./log.json', 'w') do |f|
         f.puts JSON.pretty_generate(json)
     end
+
+    #NEW PROMPT
+    prompt = TTY::Prompt.new(active_color: :blue)
+
+    choices = [
+
+        {name: 'Return to BeatTheBlues', value: 1},
+        {name: 'View Practice Log', value: 2},
+        {name: 'Exit', value: 3}
+    ]
+    
+    user_input = prompt.select("What would you like to do next #{username}?", choices)
+
+    case user_input
+    when 1
+
+        challenge_selection(username)
+
+    when 2
+        
+        read_json_file(username)
+
+    when 3    
+
+        system("clear")    
+        welcome_page
+        puts "Application closed"
+        puts "------------------------------"
+        puts "Thanks for using BeatTheBlues!"
+       
+    end
+
 
 end
 
