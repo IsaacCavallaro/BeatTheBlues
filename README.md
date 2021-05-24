@@ -14,9 +14,9 @@
 
 - BeatTheBlues is a terminal app which generates a 12 bar blues chord progression for beginner musicians. 
 
-- Practicing music, like playing an instrument is a skill. The skills of practicing an instrument effectively can be a particularly challenging skill to learn for the beginner musician in addition to learning various techniques to play an instrument. 
+- Practicing music, like playing an instrument is a skill. The skills of practicing an instrument effectively can be a particularly challenging skill to learn for the beginner musician; in addition to learning various techniques to play an instrument. 
 
-- As a student of music and a music tutor, I have seen musicians struggle with knowing what to practice and keeping track of their progress. This is why I am building this app. 
+- As a student of music and educator, I have seen musicians struggle with knowing what to practice and keeping track of their progress. This is why I am building this app. 
 
 ## What problem does BeatTheBlues solve?
 

@@ -8,7 +8,7 @@ def challenge_selection(username)
     welcome_page
 
     level_one = [['I','I','I','I'],['IV','IV','I','I'],['V','V','I','V']]
-    level_two = [['I','IV','I','I'],['IV','IV','I','I'],['V','V','I','V']]
+    level_two = [['I','IV','I','I'],['IV','IV','I','I'],['V','IV','I','V']]
     level_three = [['I','IV','I','I'],['IV','IV','I','VI'],['ii','V','I','V']]
 
     prompt = TTY::Prompt.new(active_color: :blue)
@@ -181,7 +181,7 @@ def challenge_selection(username)
             puts "Hip choice #{username}!" 
             puts "Please wait while BeatTheBlues generates a random 12 bar progression from any key and any level!" 
             sleep (2)
-            display_lucky_dip_progression
+            display_lucky_dip_progression(username)
     
         when 5
 
@@ -192,5 +192,4 @@ def challenge_selection(username)
             puts "Thanks for using BeatTheBlues!"
 
     end
-
 end

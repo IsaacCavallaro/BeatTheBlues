@@ -35,7 +35,7 @@ def log_selection(username)
 
         welcome_page
 
-        write_json_file(username)
+        write_json_file(username, "../log.json")
 
     when 2
 
@@ -59,11 +59,11 @@ end
 
 
 # WRITE TO JSON FILE FROM LOG SELECTION MENU
-def write_json_file(username)
+def write_json_file(username, filepath)
     
     begin
 
-      file =  File.read(File.expand_path( "../log.json", __dir__))
+      file =  File.read(File.expand_path(filepath, __dir__))
 
     rescue => e
         raise FileNotFoundError,"Could not find file"
@@ -106,22 +106,61 @@ end
 # READ JSON FILE
 def read_json_file(username)
 
+    system("clear") 
+
+    welcome_page
+
     file =  File.read(File.expand_path( "../log.json", __dir__))
 
     json = JSON.parse(file)
 
     json.each do |hash| 
         if hash["Name"] == username 
-            p "On #{hash["Date"]} #{username} logged  #{hash["Level"]}, #{hash["Key"]} -- BeatTheBlues"
+            p "On #{hash["Date"]} #{username} logged #{hash["Level"]} & #{hash["Key"]} -- BeatTheBlues"
         end
+    end
+
+    #NEW PROMPT
+
+    prompt = TTY::Prompt.new(active_color: :blue)
+
+    choices = [
+
+        {name: 'Return to BeatTheBlues', value: 1},
+        {name: 'Return to Practice Log', value: 2},
+        {name: 'Exit', value: 3}
+    ]
+    
+    user_input = prompt.select("What would you like to do next #{username}?", choices)
+
+    case user_input
+    when 1
+
+        challenge_selection(username)
+
+    when 2
+        
+        log_selection(username)
+
+    when 3    
+
+        system("clear")    
+        welcome_page
+        puts "Application closed"
+        puts "------------------------------"
+        puts "Thanks for using BeatTheBlues!"
+       
     end
 
 end
 
-
 # WRITE TO JSON FILE FROM DISPLAYED_PROGRESSION
 
 def displayed_progression_write_json_file(username, selected_level, selected_key, user_progression_check)
+
+    system("clear") 
+
+    welcome_page
 
     file =  File.read(File.expand_path( "../log.json", __dir__))
 
@@ -169,6 +208,7 @@ def displayed_progression_write_json_file(username, selected_level, selected_key
     end
 
     #NEW PROMPT
+
     prompt = TTY::Prompt.new(active_color: :blue)
 
     choices = [
@@ -199,8 +239,8 @@ def displayed_progression_write_json_file(username, selected_level, selected_key
        
     end
 
-
 end
+
 
 
 

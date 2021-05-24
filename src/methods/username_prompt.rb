@@ -44,8 +44,9 @@ def username_prompt
     when 3
         system("clear")    
         welcome_page
-        puts "Exit application"
-        sleep (1)
+        puts "Application closed"
+        puts "------------------------------"
+        puts "Thanks for using BeatTheBlues!"
     end
 
 end
