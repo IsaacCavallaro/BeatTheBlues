@@ -4,7 +4,18 @@ Created by Isaac Cavallaro @CoderAcademy.
 
 # Installation
 
-To install BeatTheBlues
+You will first need to clone the BeatTheBlues repository. For more information in how to clone a repository click [here.]((https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
+)
+
+cd to the directory that contains the script
+
+simply type into your terminal 
+
+                ./run_app.sh
+
+If that didn't work, we can install BeatTheBlues step by step.
+
+For more information, view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.)
 
 # Link to Repo
 
@@ -107,12 +118,12 @@ This will output a progression that could be from either level one, level two or
 
 - While BeatTheBlues has been designed with error handling in mind, sometimes mistakes are made. In the rare case that an error occurs, BeatTheBlues aims to handle errors gracefully by displaying simple messages to the user.  
 
-Error example one:
+**Error example one:**
 
         Could not find file
 
 
-Error example two
+**Error example two**
 
         Input is not valid Json
 

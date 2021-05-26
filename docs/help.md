@@ -1,10 +1,15 @@
-# How to install BeatTheBlues
+# How to install BeatTheBlues - Mac
+
+
 
 Step 1: 
 
 Step 2:
 
 Step 3: 
+
+# How to install BeatTheBlues - Windows
+
 
 
 # How to use BeatTheBlues
