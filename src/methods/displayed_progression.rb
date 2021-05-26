@@ -24,7 +24,6 @@ def display_level_1_flats_progression(username, selected_level, selected_key, us
     
 end
 
-
 ########  Level One Sharp Progressions - global variables #######
 $level_one_g_blues = ChordProgression.new([['I','I','I','I'],['IV','IV','I','I'],['V','V','I','V']],"G Major",[['G','G','G','G'],['C','C','G','G'],['D','D','G','D']])
 $level_one_d_blues = ChordProgression.new([['I','I','I','I'],['IV','IV','I','I'],['V','V','I','V']],"D Major",[['D','D','D','D'],['G','G','D','D'],['D','D','G','D']])
@@ -48,7 +47,6 @@ end
 ########  Level One Natural Progressions #######
 $level_one_c_blues = ChordProgression.new([['I','I','I','I'],['IV','IV','I','I'],['V','V','I','V']],"C Major",[['C','C','C','C'],['F','F','C','C'],['G','G','C','G']])
 
-
 def display_level_1_natural_progression(username, selected_level, selected_key, user_progression_check)
 
     puts $level_one_c_blues
@@ -71,7 +69,6 @@ $level_two_c_flat_blues = ChordProgression.new([['I','IV','I','I'],['IV','IV','I
 # Array of level two flats progressions
 $level_two_flats_array = [$level_two_f_blues, $level_two_b_flat_blues, $level_two_e_flat_blues, $level_two_a_flat_blues, $level_two_d_flat_blues, $level_two_g_flat_blues, $level_two_c_flat_blues]
 
-
 def display_level_2_flats_progression(username, selected_level, selected_key, user_progression_check)
 
     puts $level_two_flats_array.sample
@@ -91,7 +88,6 @@ $level_two_c_sharp_blues = ChordProgression.new([['I','IV','I','I'],['IV','IV','
 # Array of level two sharps progressions
 $level_two_sharps_array = [$level_two_g_blues, $level_two_d_blues, $level_two_a_blues, $level_two_e_blues, $level_two_b_blues, $level_two_f_sharp_blues, $level_two_c_sharp_blues]
 
-
 def display_level_2_sharps_progression(username, selected_level, selected_key, user_progression_check)
 
     puts $level_two_sharps_array.sample
@@ -101,7 +97,6 @@ end
 
 ########  Level Two Natural Progressions - global variables #######
 $level_two_c_blues = ChordProgression.new([['I','IV','I','I'],['IV','IV','I','I'],['V','IV','I','V']],"C Major",[['C','F','C','C'],['F','F','C','C'],['G','F','C','G']])
-
 
 def display_level_2_natural_progression(username, selected_level, selected_key, user_progression_check)
 
@@ -143,7 +138,6 @@ $level_three_c_sharp_blues = ChordProgression.new([['I','IV','I','I'],['IV','IV'
 # Array of level three sharps progressions
 $level_three_sharps_array = [$level_three_g_blues, $level_three_d_blues, $level_three_a_blues, $level_three_e_blues, $level_three_b_blues, $level_three_f_sharp_blues, $level_three_c_sharp_blues]
 
-
 def display_level_3_sharps_progression(username, selected_level, selected_key, user_progression_check)
 
     puts $level_three_sharps_array.sample
@@ -153,7 +147,6 @@ end
 
 ########  Level Three natural Progressions #######
 $level_three_c_blues = ChordProgression.new([['I','IV','I','I'],['VI','VI','I','I'],['ii','V','I','V']],"C Major",[['C','C','C','C'],['F','F','C','A'],['Dm','G','C','G']])
-
 
 def display_level_3_natural_progression(username, selected_level, selected_key, user_progression_check)
 
@@ -238,7 +231,6 @@ def display_lucky_dip_progression(username)
     end
 
 end
-
 
 #Method called after progression is displayed
 def check_in_prompt(username, selected_level, selected_key, user_progression_check)

@@ -166,9 +166,26 @@ def displayed_progression_write_json_file(username, selected_level, selected_key
 
     welcome_page
 
+    # Error Handling
+    begin
+
     file =  File.read(File.expand_path("../log.json", __dir__))
 
+    rescue => e
+        raise FileNotFoundError,"Could not find file"
+        puts e.message
+        puts e.backtrace.inspect
+    end
+
+    begin 
+  
     json = JSON.parse(file)
+  
+    rescue => e
+        raise NotValidJsonError,"Input is not valid Json "
+        puts e.message
+        puts e.backtrace.inspect
+    end
 
     log_hash = Hash.new 
 
