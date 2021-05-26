@@ -2,7 +2,7 @@
 
 # Link to Repo
 
-- A link to the source control repository can be found here.
+- A link to the source control repository can be found [here](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/tree/master/src).
 
 # Software Development Plan
 
@@ -36,6 +36,37 @@
 
 
 # Features
+
+## Feature 1.1
+
+- Users can specify the complexity (the number of chord changes) in the suggested progression.
+
+- Users can select from three differing levels of difficulty; level 1, level 2, level 3. 
+
+##  Example of Feature 1.1
+
+- The two pictures below illustrate the user "EXAMPLE" selecting level 1 and the returned progression in Roman Numerals.
+
+- Before moving on, BeatTheBlues will display this progression to the user and check if they are ready to move on. 
+
+- This way the user can easily reselect a new level/progression if they wish; without having to exit the application.
+
+![Alt](docs/app_screenshots/beattheblues_challenge_selection.png)
+
+
+![Alt](docs/app_screenshots/beattheblues_level_one_progression.png)
+
+## Feature 1.2
+
+- Users can specify if they want their selected progression to include flats, sharps or neither (natural). 
+
+
+![Alt](docs/app_screenshots/beattheblues_key_selection.png)
+
+
+
+
+
 
 # User Interaction and Experience 
 

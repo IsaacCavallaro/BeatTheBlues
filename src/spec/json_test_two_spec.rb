@@ -9,13 +9,13 @@ describe "json" do
 
     username = "Test"
 
-    file =  File.read(File.expand_path( "../log.json", __dir__))
+    file =  File.read(File.expand_path( "../valid.json", __dir__))
 
     json = JSON.parse(file)
 
     json.push(log_hash)
 
-    expect(read_json_file("Test")).to eq(username)
+    expect{write_json_file("Test", "../valid_json.json")}.to eq("Test")
   end
 end
 
@@ -33,14 +33,17 @@ end
 
 
 
-
-
 # Step 1: read from son file in your test file
 #     json = JSON.parse(File.read(“filepath/file_name.json"))
+# file =  File.read(File.expand_path( "../log.json", __dir__))
 
 
 # Step 2: call the method in your code that reads the file
 #     customer = your code.method() /// reads the name
 
+# read_json_file(username)
+
+
 # Step3: compadre the name read from the code, to your test file username
 #        expect(customer.username).to eq(json[“username”])
+
