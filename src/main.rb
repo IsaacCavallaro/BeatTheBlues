@@ -1,3 +1,5 @@
+
+
 #Relative methods
 
 require_relative 'methods/welcome_page.rb'
@@ -16,4 +18,6 @@ require_relative 'classes/chord_progression'
 
 #run program
 username_prompt
+
+
 

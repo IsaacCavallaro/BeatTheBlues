@@ -1,6 +1,7 @@
 require 'json'
 require 'colorize'
 require 'tty-prompt'
+require 'pry'
 
 class NotValidJsonError < StandardError
 end
@@ -60,7 +61,8 @@ end
 
 # WRITE TO JSON FILE FROM LOG SELECTION MENU
 def write_json_file(username, filepath)
-    
+
+    # Error Handling
     begin
 
       file =  File.read(File.expand_path(filepath, __dir__))
@@ -86,14 +88,16 @@ def write_json_file(username, filepath)
     log_hash["Name"] = username
 
     puts "Which Level did you practice today?".colorize(:blue)
-    log_hash ["Level"] = gets.chomp
+    log_hash["Level"] = gets.chomp
     puts "What Key Signature did you practice?".colorize(:cyan)
-    log_hash ["Key"] = gets.chomp
+    log_hash["Key"] = gets.chomp
     puts "Add a date to your logged session".colorize(:blue)
-    log_hash ["Date"] = gets.chomp
+    log_hash["Date"] = gets.chomp
 
     json.push(log_hash)
 
+
+    #Open, iterate and write to json file
     File.open('./log.json', 'w') do |f|
         f.puts JSON.pretty_generate(json)
     end
@@ -162,7 +166,7 @@ def displayed_progression_write_json_file(username, selected_level, selected_key
 
     welcome_page
 
-    file =  File.read(File.expand_path( "../log.json", __dir__))
+    file =  File.read(File.expand_path("../log.json", __dir__))
 
     json = JSON.parse(file)
 
@@ -208,7 +212,6 @@ def displayed_progression_write_json_file(username, selected_level, selected_key
     end
 
     #NEW PROMPT
-
     prompt = TTY::Prompt.new(active_color: :blue)
 
     choices = [
