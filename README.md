@@ -1,5 +1,11 @@
 # BeatTheBlues
 
+Created by Isaac Cavallaro @CoderAcademy.
+
+# Installation
+
+To install BeatTheBlues
+
 # Link to Repo
 
 - A link to the source control repository can be found [here](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/tree/master/src).
@@ -76,6 +82,10 @@ Flowcharts can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro
 ![Alt](docs/flowcharts/beat_the_blues_flowchart.png)
 
 # Implentation Plan
+
+- To keep track of implementing each feature, I used trello.
+
+- A link to my trello screenshots can be found [here](/docs/trello_screenshots)
 
 # Help Files
 
