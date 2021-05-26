@@ -4,12 +4,23 @@ Created by Isaac Cavallaro @CoderAcademy.
 
 # Installation
 
-You will first need to clone the BeatTheBlues repository. For more information in how to clone a repository click [here.]((https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
-)
+- You will need to have ruby installed on your computer before running BeatTheBlues. For more information on how to install ruby view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/)
 
-cd to the directory that contains the script
 
-simply type into your terminal 
+## Steps
+
+
+1. Download or clone the git repo to your computer. For more information in how to clone a repository click [here.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
+
+2. cd to the directory that contains the repository.
+
+3. Type this code into the terminal.
+
+                bundle install 
+
+7. Type this code into the terminal to start the application.
+
+
 
                 ./run_app.sh
 
