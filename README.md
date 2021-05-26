@@ -66,8 +66,6 @@
 
 
 
-
-
 # User Interaction and Experience 
 
 
@@ -82,3 +80,8 @@ Flowcharts can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro
 # Help Files
 
 Help documentation can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
+
+# References
+
+- Ruby Gems 
+- Stackoverflow

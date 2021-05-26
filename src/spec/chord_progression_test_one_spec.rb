@@ -9,12 +9,10 @@ describe "Chordpression" do
   it "should return F Major" do
     expect(level_one_f_blues.key).to eq("F Major")   
   end
-
 end
 
-
-#Returning Instance Variable Key 
-#Test expects the key of level_one_f_blue to be equal to "F Major"
+#rspec test expects the key of level_one_f_blue to be equal to "F Major"
+#The test will pass as the expected outcome "F Major" is returned. 
 
 
 

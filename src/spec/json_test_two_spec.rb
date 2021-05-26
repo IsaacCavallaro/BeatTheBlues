@@ -5,11 +5,9 @@ describe "json" do
 
     log_hash = Hash.new 
 
-    log_hash["Name"] = "Test"
-
-    username = "Test"
-
     file =  File.read(File.expand_path( "../valid.json", __dir__))
+
+    # file = File.read('../valid.json')
 
     json = JSON.parse(file)
 
@@ -18,6 +16,9 @@ describe "json" do
     expect{write_json_file("Test", "../valid_json.json")}.to eq("Test")
   end
 end
+
+
+
 
 
 
