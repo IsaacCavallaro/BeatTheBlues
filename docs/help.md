@@ -1,20 +1,14 @@
-# How to install BeatTheBlues - Mac
-
-
-
-# How to install BeatTheBlues - Windows
-
-
-https://www.thewindowsclub.com/how-to-run-sh-or-shell-script-file-in-windows-10
-
-
-
 # How to use BeatTheBlues
 
 - BeatTheBlues has been designed for beginner musicians with useability in mind. Therefore, the installation process has been intentionally kept simple. In the same manner, accessing each feature of BeatTheBlues has been designed with simplicity in mind. 
 
 - At each stage of selection in BeatTheBues, users are prompted with simple questions and BeatTheBlues will guide the user with what action is required. 
 BeatTheBlues will allow the user to exit the application from almost any location of the app or return to the previous selection after making a selection. 
+
+
+# How to install BeatTheBlues - Windows
+
+For a guide to installing BeatTheBlues on a Windows Operating System, click [here.](https://www.thewindowsclub.com/how-to-run-sh-or-shell-script-file-in-windows-10)
 
 
 # Username
