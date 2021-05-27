@@ -155,17 +155,18 @@ Flowcharts can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro
 
 # Implentation Plan
 
-- To keep track of implementing each feature, I used trello.
+- To keep track of implementing each feature, I used trello. (link to trello). To make full use of trello, I used a combination of label colours and deadlines to see what action I needed to do next.
 
 ![Alt](docs/trello_screenshots/Trello_Screen_Shot_2021-05-21_11.54.34_am.png)
 
 ![Alt](docs/trello_screenshots/Trello_Screen_Shot_2021-05-26_12.13.27_pm.png)
 
-![Alt](docs/trello_screenshots/Trello_Screen_Shot_2021-05-26_5.07.04_pm.png)
+- In addition to using colours and deadlines, I used the trello checklist for implementing each feature of BeatTheBlues.
 
-![Alt](docs/trello_screenshots/Trello_Screen_Shot_2021-05-26_1.55.54_pm.png)
+![Alt](docs/trello_screenshots/feature_one_point_one_trello.png)
 
-![Alt](docs/trello_screenshots/Trello_Screen_Shot_2021-05-24_3.45.35_pm.png)
+
+
 
  A link to all my trello screenshots can be found [here](docs/trello_screenshots)
 
@@ -187,3 +188,7 @@ https://stackoverflow.com/
 - The Windows Club
 
 https://www.thewindowsclub.com/how-to-run-sh-or-shell-script-file-in-windows-10
+
+- Draw 
+
+https://app.diagrams.net/
