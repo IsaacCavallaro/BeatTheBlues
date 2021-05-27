@@ -14,7 +14,7 @@ Created by Isaac Cavallaro @CoderAcademy May 2021.
 ## Steps to install BeatTheBlues (Linux or Unix)
 
 
-1. Clone the git repo to your computer. For more information in how to clone a repository click [here.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
+1. Clone the git repo to your computer. For more information on how to clone a repository click [here.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
 
         git clone https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3.git
 
