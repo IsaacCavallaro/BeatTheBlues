@@ -146,9 +146,6 @@ In the key of C this would be:
 
 - Users can specify if they want their selected progression to include flats, sharps or neither (natural). 
 
-- For more information on feature 1.2 view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
-
-
 ![Alt](docs/app_screenshots/beattheblues_key_selection.png)
 
 # Selecting keys
@@ -196,7 +193,7 @@ This will output a progression that could be from either level one, level two or
 
 # User Interaction and Experience 
 
-- For more information on on user interaction and experience view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
+- For more information on user interaction and experience view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
 
 # Errors
 
