@@ -2,5 +2,5 @@
 
 bundle install
 
-ruby src/main.rb
+ruby main.rb
 
