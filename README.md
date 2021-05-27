@@ -6,7 +6,8 @@ Created by Isaac Cavallaro @CoderAcademy.
 
 - You will need to have **ruby installed** on your computer before running BeatTheBlues. For more information on how to install ruby please view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/)
 
-- You will also need to install the required **ruby gems**. For more information on how to ruby gems please view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/)
+- You will also need to install the required **ruby gems**. For more information on how to install ruby gems please view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.)
+
 
 
 ## Steps to install BeatTheBlues
