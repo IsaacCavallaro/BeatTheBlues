@@ -165,6 +165,14 @@ Flowcharts can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro
 
 ![Alt](docs/trello_screenshots/feature_one_point_one_trello.png)
 
+![Alt](docs/trello_screenshots/feature_one_point_two_trello.png)
+
+![Alt](docs/trello_screenshots/feature_two_trello.png)
+
+![Alt](docs/trello_screenshots/feature_three_trello.png)
+
+
+
 
 
 
