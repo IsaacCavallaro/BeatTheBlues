@@ -14,9 +14,7 @@ Created by Isaac Cavallaro @CoderAcademy.
 
 2. cd to the directory that contains the repository.
 
-3. Type this code into the terminal.
-
-                bundle install 
+3. cd to the src directory.
 
 7. Type this code into the terminal to start the application.
 
