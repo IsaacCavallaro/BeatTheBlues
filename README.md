@@ -8,8 +8,10 @@ Created by Isaac Cavallaro @CoderAcademy.
 
 - You will also need to install the required **ruby gems**. For more information on how to install ruby gems please view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
 
+- If you are using a Windows Operating System
 
-## Steps to install BeatTheBlues
+
+## Steps to install BeatTheBlues (Linux or Unix)
 
 
 1. Clone the git repo to your computer. For more information in how to clone a repository click [here.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
@@ -155,7 +157,18 @@ Flowcharts can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro
 
 - To keep track of implementing each feature, I used trello.
 
-- A link to my trello screenshots can be found [here](/docs/trello_screenshots)
+![Alt](docs/trello_screenshots/Trello_Screen_Shot_2021-05-21_11.54.34_am.png)
+
+![Alt](docs/trello_screenshots/Trello_Screen_Shot_2021-05-26_12.13.27_pm.png)
+
+![Alt](docs/trello_screenshots/Trello_Screen_Shot_2021-05-26_5.07.04_pm.png)
+
+![Alt](docs/trello_screenshots/Trello_Screen_Shot_2021-05-26_1.55.54_pm.png)
+
+![Alt](docs/trello_screenshots/Trello_Screen_Shot_2021-05-24_3.45.35_pm.png)
+
+ A link to all my trello screenshots can be found [here](docs/trello_screenshots)
+
 
 # Help Files
 
@@ -170,3 +183,7 @@ https://rubygems.org/
 - Stackoverflow
 
 https://stackoverflow.com/
+
+- The Windows Club
+
+https://www.thewindowsclub.com/how-to-run-sh-or-shell-script-file-in-windows-10

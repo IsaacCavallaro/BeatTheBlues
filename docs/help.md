@@ -2,13 +2,12 @@
 
 
 
-Step 1: 
-
-Step 2:
-
-Step 3: 
-
 # How to install BeatTheBlues - Windows
+
+
+
+
+https://www.thewindowsclub.com/how-to-run-sh-or-shell-script-file-in-windows-10
 
 
 
