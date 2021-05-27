@@ -215,7 +215,7 @@ This will output a progression that could be from either level one, level two or
 
 Flowcharts can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/tree/master/docs/flowcharts)
 
-![Alt](docs/flowcharts/beat_the_blues_flow_chart_one.png)
+![Alt](docs/flowcharts/beat_the_blues_chart.png)
 
 # Implentation Plan
 
