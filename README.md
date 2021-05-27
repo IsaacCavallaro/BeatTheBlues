@@ -4,10 +4,12 @@ Created by Isaac Cavallaro @CoderAcademy.
 
 # Installation
 
-- You will need to have ruby installed on your computer before running BeatTheBlues. For more information on how to install ruby view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/)
+- You will need to have **ruby installed** on your computer before running BeatTheBlues. For more information on how to install ruby please view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/)
+
+- You will also need to install the required **ruby gems**. For more information on how to ruby gems please view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/)
 
 
-## Steps (If you have ruby installed on your computer)
+## Steps to install BeatTheBlues
 
 
 1. Clone the git repo to your computer. For more information in how to clone a repository click [here.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
