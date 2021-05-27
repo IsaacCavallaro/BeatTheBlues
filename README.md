@@ -120,7 +120,6 @@ In the key of C this would be:
 
 - Users can select from three differing levels of difficulty; level 1, level 2, level 3. 
 
-- For more information on feature 1.1 view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
 
 ##  Example of Feature 1.1
 
@@ -174,7 +173,7 @@ This will output a progression that could be from either level one, level two or
 
 - Data can be stored and view at the start of the app and after a progression has been displayed.
 
-- For more information on feature 3 view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
+
 
 # Adding to Practice Log (Before displayed progression)
 
