@@ -219,7 +219,10 @@ Flowcharts can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro
 
 # Implentation Plan
 
-- To keep track of implementing each feature, I used trello. (link to trello). To make full use of trello, I used a combination of label colours and deadlines to see what action I needed to do next.
+- To keep track of implementing each feature, I used trello. 
+
+- To view my trello board please click [here](https://trello.com/b/HAAYZp6U/terminal-app)
+. To make full use of trello, I used a combination of label colours and deadlines to see what action I needed to do next.
 
 ![Alt](docs/trello_screenshots/Trello_Screen_Shot_2021-05-21_11.54.34_am.png)
 
