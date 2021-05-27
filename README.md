@@ -13,12 +13,18 @@ Created by Isaac Cavallaro @CoderAcademy May 2021.
 
 ## Steps to install BeatTheBlues (Linux or Unix)
 
+1. Open up terminal 
+
+2. Change to a directory you wish to install BeatTheBlues to (Download for example)
+
+        cd Downloads
+
 
 1. Clone the git repo to your computer. For more information on how to clone a repository click [here.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
 
         git clone https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3.git
 
-2. cd to the directory that contains the repository.
+2. Change to the directory that contains the repository.
 
         cd IsaacCavallaro_T1A3
 
@@ -32,9 +38,7 @@ Created by Isaac Cavallaro @CoderAcademy May 2021.
 
         ./run_app.sh
 
-If that didn't work, we can install BeatTheBlues step by step.
-
-For more information, view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
+If that didn't work please view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
 
 # Link to Repo
 
