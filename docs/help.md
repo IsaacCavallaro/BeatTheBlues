@@ -5,8 +5,6 @@
 # How to install BeatTheBlues - Windows
 
 
-
-
 https://www.thewindowsclub.com/how-to-run-sh-or-shell-script-file-in-windows-10
 
 
@@ -28,60 +26,6 @@ BeatTheBlues will allow the user to exit the application from almost any locatio
 
 
 
-
-
-# Selecting levels 
-
-
-- Levels can be selected with the up and down arrows on the keyboard (See image below).
-
-
-![Alt](../docs/app_screenshots/beattheblues_challenge_selection.png)
-
-# Selecting keys
-
-- Keys can be selected with the up and down arrows on the keyboard (See image below).
-
-![Alt](../docs/app_screenshots/beattheblues_key_selection.png)
-
-# Lucky dip
-
-- Lucky dip will output a progression that could be from either level one, level two or level three 
-difficulty and could be from any of the twelve keys.
-
-- Lucky dip can be selected with the up and down arrows on your keyboard.
-
-
-# Practice Log
-
-- Users can save their progress under their username.
-
-- Multiple usernames can be stored and retrieved.
-
-- Data can be stored and view at the start of the app and after a progression has been displayed.
-
-# Adding to Practice Log (Before displayed progression)
-
-- To add to a practice log before a displayed progression, users can select *Practice log* with the up and down arrows on their keyboard (See image below).
-
-
-![Alt](../docs/app_screenshots/beat_the_blues_practice_log.png)
-
-# Adding to Practice Log (After displayed progression)
-
-- In order to add to the practice log after a displayed progression, users can select *Store this session in your practice log?* with the up and down arrows on their keyboard (See image below).
-
-![Alt](../docs/app_screenshots/beat_the_blues_add_to_practice_log_two.png)
-
-
-
-# Checking Practice Log
-
-- To check a practice log before a displayed progression, users can select *Practice log* with the up and down arrows on their keyboard and then select *Check Practice log* (See image below).
-
-![Alt](../docs/app_screenshots/beat_the_blues_check_practice_log.png)
-
-
 # Requirements
 
 - BeatTheBlues requires the user to have **Ruby installed** and the **Ruby Gems installed**; detailed in the gem file and listed below. 
@@ -91,17 +35,17 @@ difficulty and could be from any of the twelve keys.
 
 # Gems
 
-- gem "tty-prompt", "~> 0.23.1" 
+- tty-prompt version 0.23.1
 
-- gem "rspec", "~> 3.10"
+- rspec version 3.10"
 
-- gem "colorize", "~> 0.8.1"
+- colorize version 0.8.1
 
-- gem "artii", "~> 2.1"
+- artii version 2.1
 
-- gem "json", "~> 2.5"
+- json version 2.5
 
-- gem "pry", "~> 0.14.1"
+- pry version 0.14.1
 
 
 # Links to install Gems

@@ -1,6 +1,6 @@
 # BeatTheBlues
 
-Created by Isaac Cavallaro @CoderAcademy.
+Created by Isaac Cavallaro @CoderAcademy May 2021.
 
 # Installation
 
@@ -8,7 +8,7 @@ Created by Isaac Cavallaro @CoderAcademy.
 
 - You will also need to install the required **ruby gems**. For more information on how to install ruby gems please view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
 
-- If you are using a Windows Operating System
+- The app has not been tested with a Windows Operating system. For more information on running a .sh file on Windows, click [here](https://www.webservertalk.com/run-sh-files-in-linux-and-windows/).
 
 
 ## Steps to install BeatTheBlues (Linux or Unix)
@@ -42,17 +42,32 @@ For more information, view the help documentation which can be found [here.](htt
 
 # Software Development Plan
 
-- 
-
-- 
-
 ## Purpose & Scope
-
-- BeatTheBlues is a terminal app which generates a 12 bar blues chord progression for beginner musicians. 
 
 - Practicing music, like playing an instrument is a skill. The skills of practicing an instrument effectively can be a particularly challenging skill to learn for the beginner musician; in addition to learning various techniques to play an instrument. 
 
 - As a student of music and educator, I have seen musicians struggle with knowing what to practice and keeping track of their progress. This is why I am building this app. 
+
+- BeatTheBlues is a terminal app which generates a 12 bar blues chord progression for beginner musicians. 
+
+- Specifically, BeatTheBlues allows beginner musicians to identity the roman numeral
+relationship between three levels of a major blues chord progressions and a given key signature. This includes key signatures which incorporate flats, sharps or neither (natural).
+
+**Example**: Simple 12 bar blues chord progression: 
+
+        
+        I, I , I, I
+        IV, IV, I, I
+        V, V, I, V 
+In the key of C this would be: 
+
+        C, C, C, C
+        F, F, F, F
+        G, G, C, G
+
+
+- In BeatTheBlues, this would be a *Level 1* and *Natural* selection. 
+
 
 ## What problem does BeatTheBlues solve?
 
@@ -70,9 +85,13 @@ For more information, view the help documentation which can be found [here.](htt
 
 - The app is particularly useful for people wanting to learn music as a hobby and who don’t have access to a private tutor. 
 
+- Each BeatTheBlues progression can be applied to piano or guitar to build chords on. Alternatively users can practice soloing over the progression with a chosen instrument (Saxophone, Trumpet etc).
+
 ## Why use BeatTheBlues?
 
-- Beginner musicians have enough to think about when it comes to learning material. Therefore, users of BeatTheBlues can eliminate a portion of the load of deciding what to practice and how to keep track of their practice by including the app in their practice routine.
+- Beginner musicians have enough to think about when it comes to learning material. Therefore, users of BeatTheBlues can eliminate a portion of the load of deciding what to practice and how to keep track of their practice by including BeatTheBlues in their practice routine.
+
+- After installing  BeatTheBlues, users can start using the features of the app instantly with the app prompting users through each step. For more information on how to use BeatTheBlues, please view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
 
 - With the apps simple design, easy installation, adding BeatTheBlues to a practice routine will make learning music fun.
 
@@ -99,6 +118,14 @@ For more information, view the help documentation which can be found [here.](htt
 
 ![Alt](docs/app_screenshots/beattheblues_level_one_progression.png)
 
+# Selecting levels 
+
+
+- Levels can be selected with the up and down arrows on the keyboard (See image below).
+
+
+![Alt](../docs/app_screenshots/beattheblues_challenge_selection.png)
+
 ## Feature 1.2
 
 - Users can specify if they want their selected progression to include flats, sharps or neither (natural). 
@@ -108,15 +135,21 @@ For more information, view the help documentation which can be found [here.](htt
 
 ![Alt](docs/app_screenshots/beattheblues_key_selection.png)
 
+# Selecting keys
+
+- Keys can be selected with the up and down arrows on the keyboard (See image below).
+
+![Alt](../docs/app_screenshots/beattheblues_key_selection.png)
+
 
 ## Feature 2
 
 - Users can select the lucky dip option which will output a random 12 bar blues progression.
 This will output a progression that could be from either level one, level two or level three difficulty and could be from any of the twelve keys. 
 
-- For more information on feature 2 view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
+- Lucky dip can be selected with the up and down arrows on your keyboard.
 
-## Feature 3
+## Feature 3 - Practice Log
 
 - Users can save their progress under their username.
 
@@ -126,6 +159,24 @@ This will output a progression that could be from either level one, level two or
 
 - For more information on feature 3 view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
 
+# Adding to Practice Log (Before displayed progression)
+
+- To add to a practice log before a displayed progression, users can select *Practice log* with the up and down arrows on their keyboard (See image below)
+
+![Alt](../docs/app_screenshots/beat_the_blues_practice_log.png)
+
+# Adding to Practice Log (After displayed progression)
+
+- In order to add to the practice log after a displayed progression, users can select *Store this session in your practice log?* with the up and down arrows on their keyboard (See image below).
+
+![Alt](../docs/app_screenshots/beat_the_blues_add_to_practice_log_two.png)
+
+
+# Checking Practice Log
+
+- To check a practice log before a displayed progression, users can select *Practice log* with the up and down arrows on their keyboard and then select *Check Practice log* (See image below).
+
+![Alt](../docs/app_screenshots/beat_the_blues_check_practice_log.png)
 
 # User Interaction and Experience 
 
