@@ -102,7 +102,7 @@ In the key of C this would be:
 
 ## Why use BeatTheBlues?
 
-- Beginner musicians have enough to think about when it comes to learning material. Therefore, users of BeatTheBlues can eliminate a portion of the load of deciding what to practice and how to keep track of their practice by including BeatTheBlues in their practice routine.
+- Beginner musicians have enough to think about when it comes to learning an instrument. Therefore, by including BeatTheBlues to their practice routine, beginner musicians are directed with what to practice and how to keep track of their practice and progress.
 
 - After installing  BeatTheBlues, users can start using the features of the app instantly with the app prompting users through each step. For more information on how to use BeatTheBlues, please view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
 
@@ -137,7 +137,7 @@ In the key of C this would be:
 - Levels can be selected with the up and down arrows on the keyboard (See image below).
 
 
-![Alt](../docs/app_screenshots/beattheblues_challenge_selection.png)
+![Alt](docs/app_screenshots/beattheblues_challenge_selection.png)
 
 ## Feature 1.2
 
@@ -152,7 +152,7 @@ In the key of C this would be:
 
 - Keys can be selected with the up and down arrows on the keyboard (See image below).
 
-![Alt](../docs/app_screenshots/beattheblues_key_selection.png)
+![Alt](docs/app_screenshots/beattheblues_key_selection.png)
 
 
 ## Feature 2
@@ -176,20 +176,20 @@ This will output a progression that could be from either level one, level two or
 
 - To add to a practice log before a displayed progression, users can select *Practice log* with the up and down arrows on their keyboard (See image below)
 
-![Alt](../docs/app_screenshots/beat_the_blues_practice_log.png)
+![Alt](docs/app_screenshots/beat_the_blues_practice_log.png)
 
 # Adding to Practice Log (After displayed progression)
 
 - In order to add to the practice log after a displayed progression, users can select *Store this session in your practice log?* with the up and down arrows on their keyboard (See image below).
 
-![Alt](../docs/app_screenshots/beat_the_blues_add_to_practice_log_two.png)
+![Alt](docs/app_screenshots/beat_the_blues_add_to_practice_log_two.png)
 
 
 # Checking Practice Log
 
 - To check a practice log before a displayed progression, users can select *Practice log* with the up and down arrows on their keyboard and then select *Check Practice log* (See image below).
 
-![Alt](../docs/app_screenshots/beat_the_blues_check_practice_log.png)
+![Alt](docs/app_screenshots/beat_the_blues_check_practice_log.png)
 
 # User Interaction and Experience 
 
@@ -234,11 +234,6 @@ Flowcharts can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro
 ![Alt](docs/trello_screenshots/feature_two_trello.png)
 
 ![Alt](docs/trello_screenshots/feature_three_trello.png)
-
-
-
-
-
 
  A link to all my trello screenshots can be found [here](docs/trello_screenshots)
 
