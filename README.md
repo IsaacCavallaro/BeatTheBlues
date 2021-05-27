@@ -68,6 +68,19 @@ In the key of C this would be:
 
 - In BeatTheBlues, this would be a *Level 1* and *Natural* selection. 
 
+**Example 2**: Slightly more challenging 12 bar blues chord progression: 
+
+        I, IV , I, I
+        IV, IV, I, I
+        V, IV, I, V 
+
+        C, F, C, C
+        F, F, C, C
+        G, F, C, G
+
+
+- In BeatTheBlues, this would be a *Level 2* and *Natural* selection. 
+
 
 ## What problem does BeatTheBlues solve?
 
