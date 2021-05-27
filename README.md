@@ -4,10 +4,9 @@ Created by Isaac Cavallaro @CoderAcademy.
 
 # Installation
 
-- You will need to have **ruby installed** on your computer before running BeatTheBlues. For more information on how to install ruby please view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/)
+- You will need to have **ruby installed** on your computer before running BeatTheBlues. For more information on how to install ruby please view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
 
-- You will also need to install the required **ruby gems**. For more information on how to install ruby gems please view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.)
-
+- You will also need to install the required **ruby gems**. For more information on how to install ruby gems please view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
 
 
 ## Steps to install BeatTheBlues
@@ -33,7 +32,7 @@ Created by Isaac Cavallaro @CoderAcademy.
 
 If that didn't work, we can install BeatTheBlues step by step.
 
-For more information, view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.)
+For more information, view the help documentation which can be found [here.](https://github.com/IsaacCavallaro/IsaacCavallaro_T1A3/blob/master/docs/help.md)
 
 # Link to Repo
 
